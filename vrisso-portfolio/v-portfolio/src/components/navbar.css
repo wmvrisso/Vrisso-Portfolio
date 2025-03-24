@@ -3,18 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  background-image: url("/src/assets/images/blu_midi_10.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 20px 25px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  margin: 20px 170px;
 }
 
 /* Logo styling */
@@ -36,17 +25,6 @@
 
 /* Navigation menu */
 .nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-  flex-grow: 1;
-  justify-content: center; /* Centers menu items */
-}
-
-/* Navigation menu */
-.nav-menu {
   font-size: 15px;
   list-style: none;
   display: flex;
@@ -59,16 +37,30 @@
 
 /* Menu items */
 .nav-menu li {
-  font-size: 15px;
-  font-family: "outfit";
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
   cursor: pointer;
   color: #ffffff;
+  position: relative; /* Ensures ::after is positioned relative to li */
+  padding-bottom: 5px; /* Adds space for the underline */
 }
 
-/* Hover effect */
-.nav-menu li:hover {
-  color: rgb(57, 157, 71);
-  cursor: pointer;
+/* Underline effect */
+.nav-menu li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px; /* Thickness of the underline */
+  background: linear-gradient(to right, #00c8ff61, #92fe9d7d);
+  transform: scaleX(0); /* Start hidden */
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu li:hover::after {
+  transform: scaleX(1); /* Expands underline on hover */
 }
 
 /* "Let's Connect" button */
@@ -81,7 +73,7 @@
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  margin-right: 50px;
+  margin-right: -70px;
   transition: 0.2s;
 }
 

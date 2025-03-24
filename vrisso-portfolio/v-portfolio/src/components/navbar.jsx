@@ -8,6 +8,7 @@ const Navbar = () => {
       <img src={logo} alt="" />
 
       <ul className="nav-menu ${menuOpen ? 'active' : ''}">
+        <li>Home</li>
         <li>About Me</li>
         <li>Portfolio</li>
         <li>Resume</li>
