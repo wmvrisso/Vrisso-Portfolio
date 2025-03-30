@@ -36,3 +36,5 @@ const Services_Data = [
       "I provide cloud-based solutions for scalable and flexible application deployment.",
   },
 ];
+
+export default Services_Data;

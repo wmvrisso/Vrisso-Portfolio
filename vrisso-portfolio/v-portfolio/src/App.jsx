@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import About from "./components/about";
-// import Services from "./components/services";
+import Services from "./components/services";
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
-      {/* <Services /> */}
+      <Services />
     </div>
   );
 };
