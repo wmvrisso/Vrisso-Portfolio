@@ -3,24 +3,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 170px;
+  margin: 50px 140px;
 }
 
 /* Logo styling */
 .navbar img {
   position: absolute; /* Makes the logo float above other elements */
-  top: -90px; /* Adjust for overlap */
-  left: 0px;
+  top: -70px; /* Adjust for overlap */
+  left: 20px;
   width: 300px; /* Adjust size */
   height: auto;
   pointer-events: none; /* Ensures it doesn't interfere with clicks */
   z-index: 1100; /* Ensures it's above everything */
   transition: transform 0.3s ease-in-out;
-}
-
-/* Shrinks the logo when hovered */
-.navbar img:hover {
-  transform: scale(0.9);
 }
 
 /* Navigation menu */
@@ -68,9 +63,10 @@
   background: linear-gradient(90deg, #00c8ff61, #92fe9d7d);
   color: white;
   font-family: "outfit";
+  font-size: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  padding: 10px 15px;
-  border-radius: 5px;
+  padding: 20px 30px;
+  border-radius: 7px;
   cursor: pointer;
   font-weight: bold;
   margin-right: -70px;
@@ -99,7 +95,7 @@
   }
 
   .navbar img {
-    position: absolute; /* Makes the logo float above other elements */
+    position: fixed; /* Makes the logo float above other elements */
     top: -90px; /* Adjust for overlap */
     left: 0px;
     width: 300px; /* Adjust size */
@@ -138,7 +134,7 @@
   }
 
   .navbar img {
-    position: absolute; /* Makes the logo float above other elements */
+    position: fixed; /* Makes the logo float above other elements */
     top: -90px; /* Adjust for overlap */
     left: 0px;
     width: 300px; /* Adjust size */

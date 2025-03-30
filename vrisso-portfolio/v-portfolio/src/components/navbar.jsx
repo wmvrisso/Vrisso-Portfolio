@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import logo from "../assets/images/vrisso_logo.png";
+import logo from "../assets/images/v_gradient_logo_1.png";
 
 const Navbar = () => {
   return (

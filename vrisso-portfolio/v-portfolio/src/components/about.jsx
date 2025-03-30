@@ -31,19 +31,19 @@ const About = () => {
           <div className="about-skills">
             <div className="about-skill">
               <p>HTML & CSS</p>
-              <hr style={{ width: "50px" }} />
+              <hr style={{ width: "400px" }} />
             </div>
             <div className="about-skill">
               <p>React JS</p>
-              <hr style={{ width: "70px" }} />
+              <hr style={{ width: "370px" }} />
             </div>
             <div className="about-skill">
               <p>JavaScript</p>
-              <hr style={{ width: "60px" }} />
+              <hr style={{ width: "370px" }} />
             </div>
             <div className="about-skill">
               <p>Next JS</p>
-              <hr style={{ width: "50px" }} />
+              <hr style={{ width: "300px" }} />
             </div>
           </div>
         </div>

@@ -15,11 +15,11 @@
   font-weight: 600;
 }
 .about-left img {
-  width: 400px;
+  width: 500px;
 }
 .about-sections {
   display: flex;
-  gap: 80px;
+  gap: 0px;
 }
 .about-right {
   display: flex;
