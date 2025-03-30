@@ -2,20 +2,31 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 50px 140px;
+  position: fixed; /* Keep navbar visible while scrolling */
+  height: 150px; /* Fixed height for the navbar */
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Slight transparency for a modern effect */
+  padding: 0px 0px;
+  z-index: 1000; /* Ensure it stays above other content */
+  backdrop-filter: blur(20px); /* Adds a smooth background blur effect */
+}
+
+/* Ensuring child elements stay centered */
+.nav-logo {
+  position: relative;
+  top: 0px; /* Adjust as needed */
+  left: 10px;
+  z-index: 1100;
 }
 
 /* Logo styling */
-.navbar img {
-  position: absolute; /* Makes the logo float above other elements */
-  top: -70px; /* Adjust for overlap */
-  left: 20px;
-  width: 300px; /* Adjust size */
-  height: auto;
-  pointer-events: none; /* Ensures it doesn't interfere with clicks */
-  z-index: 1100; /* Ensures it's above everything */
-  transition: transform 0.3s ease-in-out;
+.nav-logo img {
+  width: 250px; /* Adjust size */
+  position: relative;
+  top: 5px; /* Adjust vertical position */
+  margin-left: 150px; /* Adjust as needed */
+  pointer-events: auto; /* Allow interaction with the logo */
+  z-index: 1100;
 }
 
 /* Navigation menu */
@@ -24,9 +35,9 @@
   list-style: none;
   display: flex;
   gap: 30px;
-  margin: 0;
+  margin: 0 auto; /* Center menu */
   padding: 0;
-  flex-grow: 1; /* Ensures menu takes up available space */
+  flex: 1; /* Ensures even spacing */
   justify-content: center; /* Centers menu items */
 }
 
@@ -36,8 +47,8 @@
   font-family: "Outfit", sans-serif;
   cursor: pointer;
   color: #ffffff;
-  position: relative; /* Ensures ::after is positioned relative to li */
-  padding-bottom: 5px; /* Adds space for the underline */
+  position: relative;
+  padding-bottom: 0px;
 }
 
 /* Underline effect */
@@ -45,32 +56,33 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 100%; /* Position below the text */
   width: 100%;
-  height: 5px; /* Thickness of the underline */
+  height: 7px;
   background: linear-gradient(to right, #00c8ff61, #92fe9d7d);
-  transform: scaleX(0); /* Start hidden */
+  transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
 }
 
 .nav-menu li:hover::after {
-  transform: scaleX(1); /* Expands underline on hover */
+  transform: scaleX(1);
 }
 
 /* "Let's Connect" button */
 .nav-connect {
   background: linear-gradient(90deg, #00c8ff61, #92fe9d7d);
   color: white;
-  font-family: "outfit";
+  font-family: "Outfit", sans-serif;
   font-size: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  padding: 20px 30px;
+  padding: 15px 25px;
   border-radius: 7px;
+  margin-right: 230px;
   cursor: pointer;
   font-weight: bold;
-  margin-right: -70px;
   transition: 0.2s;
+  position: relative;
 }
 
 /* Hover effect for button */
@@ -79,40 +91,122 @@
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 1024px) {
+@media (max-width: 1290px) {
+  /* Navbar container */
+  .navbar {
+    display: flex;
+    align-items: center;
+    position: fixed; /* Keep navbar visible while scrolling */
+    height: 150px; /* Fixed height for the navbar */
+    width: 100%;
+    background: rgba(
+      0,
+      0,
+      0,
+      0.8
+    ); /* Slight transparency for a modern effect */
+    padding: 0px 0px;
+    z-index: 1000; /* Ensure it stays above other content */
+    backdrop-filter: blur(20px); /* Adds a smooth background blur effect */
+  }
+
+  /* Ensuring child elements stay centered */
+  .nav-logo {
+    position: relative;
+    top: 0px; /* Adjust as needed */
+    left: 10px;
+    z-index: 1100;
+  }
+
+  /* Logo styling */
+  .nav-logo img {
+    width: 250px; /* Adjust size */
+    position: relative;
+    top: 5px; /* Adjust vertical position */
+    margin-left: 50px; /* Adjust as needed */
+    pointer-events: auto; /* Allow interaction with the logo */
+    z-index: 1100;
+  }
+
+  /* Navigation menu */
   .nav-menu {
-    gap: 20px; /* Reduce spacing */
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto; /* Center menu */
+    padding: 0;
+    flex: 1; /* Ensures even spacing */
+    justify-content: center; /* Centers menu items */
+  }
+
+  /* Menu items */
+  .nav-menu li {
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    cursor: pointer;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 0px;
+  }
+
+  /* Underline effect */
+  .nav-menu li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%; /* Position below the text */
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(to right, #00c8ff61, #92fe9d7d);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-menu li:hover::after {
+    transform: scaleX(1);
+  }
+
+  .nav-connect {
+    display: none;
+  }
+}
+
+@media (max-width: 880px) {
+  /* Ensuring child elements stay centered */
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Logo styling */
+  .nav-logo img {
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* Adjust size */
+    top: 5px; /* Adjust vertical position */
+    pointer-events: auto; /* Allow interaction with the logo */
+    z-index: 1100;
+  }
+
+  .nav-menu {
     flex-direction: column;
     align-items: center;
     background-color: black;
     position: absolute;
-    top: 110px; /* Ensure it doesn't overlap navbar */
+    top: 120px;
     left: 0;
     width: 100%;
     padding: 15px 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 900; /* Lower than navbar */
-  }
-
-  .navbar img {
-    position: fixed; /* Makes the logo float above other elements */
-    top: -90px; /* Adjust for overlap */
-    left: 0px;
-    width: 300px; /* Adjust size */
-    height: auto;
-    pointer-events: none; /* Ensures it doesn't interfere with clicks */
-    z-index: 1100; /* Ensures it's above everything */
-    transition: transform 0.3s ease-in-out;
+    z-index: 900;
   }
 
   .nav-menu.active {
     display: flex; /* Show menu when active */
-  }
-
-  .navbar {
-    height: 70px; /* Ensure navbar height is consistent */
-    position: fixed; /* Keep navbar fixed */
-    width: 100%; /* Full width */
   }
 
   .nav-menu li {
@@ -120,28 +214,6 @@
     padding: 5px;
     width: 100%;
     text-align: center;
-  }
-
-  .nav-connect {
-    display: none; /* Hide button on mobile */
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
-  }
-
-  .navbar img {
-    position: fixed; /* Makes the logo float above other elements */
-    top: -90px; /* Adjust for overlap */
-    left: 0px;
-    width: 300px; /* Adjust size */
-    height: auto;
-    pointer-events: none; /* Ensures it doesn't interfere with clicks */
-    z-index: 1100; /* Ensures it's above everything */
-    transition: transform 0.3s ease-in-out;
   }
 
   .nav-connect {
