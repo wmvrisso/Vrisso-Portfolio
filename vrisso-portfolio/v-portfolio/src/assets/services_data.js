@@ -13,7 +13,7 @@ const Services_Data = [
   },
   {
     s_no: "03",
-    s_name: "Application Development",
+    s_name: "App Development",
     s_desc:
       "I develop cross-platform applications that run smoothly on various devices.",
   },
@@ -25,7 +25,7 @@ const Services_Data = [
   },
   {
     s_no: "05",
-    s_name: "Database Management",
+    s_name: "Data Management",
     s_desc:
       "I manage databases efficiently to ensure data integrity and security.",
   },

@@ -6,7 +6,7 @@
 }
 
 .hero img {
-  margin-top: 215px;
+  margin-top: 160px;
   width: 400px;
 }
 
@@ -29,7 +29,7 @@
   line-height: 40px;
 }
 .hero-action {
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   display: flex;
   align-items: center;
   gap: 25px;

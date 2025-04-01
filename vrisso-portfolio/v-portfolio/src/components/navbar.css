@@ -89,9 +89,17 @@
 .nav-connect:hover {
   transform: scale(1.05);
 }
+.anchor-link {
+  text-decoration: none; /* Remove underline */
+  color: #ffffff; /* Text color */
+}
+.nav-mob-open,
+.nav-mob-close {
+  display: none; /* Hide by default */
+}
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 1290px) {
+@media (max-width: 1290px) and (min-width: 881px) {
   /* Navbar container */
   .navbar {
     display: flex;
@@ -174,14 +182,43 @@
 }
 
 @media (max-width: 880px) {
-  /* Ensuring child elements stay centered */
-  .nav-logo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+  .navbar {
+    margin: 20px 50px;
   }
 
+  .nav-mob-open {
+    display: block;
+    position: relative;
+    right: 30px; /* Adjust as needed */
+    width: 40px; /* Adjust as needed */
+  }
+  .nav-mob-close {
+    display: block;
+    position: relative;
+    width: 40px; /* Adjust as needed */
+    top: 30px;
+    left: 290px;
+    cursor: pointer; /* Optional: Makes it clickable */
+  }
+  .nav-menu {
+    position: fixed; /* Hide the menu by default */
+    flex-direction: column;
+    align-items: start; /* Center items */
+    top: 0; /* Start at the top of the screen */
+    gap: 30px; /* Space between items */
+    background-color: #00c8ff61; /* Background color */
+    width: 350px; /* Width of the menu */
+    height: 100vh; /* Full height of the viewport */
+    z-index: 2;
+    transition: 0.2s;
+    right: -350px; /* Start off-screen */
+  }
+  .nav-menu li {
+    font-size: 30px; /* Larger font size for better visibility */
+    padding-left: 100px; /* Indent menu items */
+    flex-direction: row;
+    gap: 20px; /* Space between icon and text */
+  }
   /* Logo styling */
   .nav-logo img {
     flex-direction: column;
@@ -190,30 +227,6 @@
     top: 5px; /* Adjust vertical position */
     pointer-events: auto; /* Allow interaction with the logo */
     z-index: 1100;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    position: absolute;
-    top: 120px;
-    left: 0;
-    width: 100%;
-    padding: 15px 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 900;
-  }
-
-  .nav-menu.active {
-    display: flex; /* Show menu when active */
-  }
-
-  .nav-menu li {
-    font-size: 16px;
-    padding: 5px;
-    width: 100%;
-    text-align: center;
   }
 
   .nav-connect {

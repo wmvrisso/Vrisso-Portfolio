@@ -1,25 +1,54 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../assets/images/v_gradient_logo_1.png";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import menu_open from "../assets/images/hamburger-menu-icon.svg";
+import menu_close from "../assets/images/menu-close.svg";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenu] = useState(false);
 
   return (
     <nav className="navbar">
       <a href="/" className="nav-logo">
-        <img src={logo} alt="Home" />
+        <img src={logo} alt="" />
+        <img src="" alt="" className="nav-mob-open" />
       </a>
 
       <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
-        <li>Home</li>
-        <li>About Me</li>
-        <li>Portfolio</li>
-        <li>Resume</li>
-        <li>Contact</li>
+        <img src="" alt="" className="nav-mob-close" />
+        <li>
+          <AnchorLink className="anchor-link" href="#home">
+            <p onClick={() => setMenu("home")}>Home</p>
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink className="anchor-link" offset={50} href="#about">
+            <p onClick={() => setMenu("about")}>About Me</p>
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink className="anchor-link" offset={50} href="#services">
+            <p onClick={() => setMenu("services")}>Portfolio</p>
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink className="anchor-link" offset={50} href="#work">
+            <p onClick={() => setMenu("work")}>Resume</p>
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink className="anchor-link" offset={50} href="#contact">
+            <p onClick={() => setMenu("contact")}>Contact</p>
+          </AnchorLink>
+        </li>
       </ul>
 
-      <div className="nav-connect">Let's Connect</div>
+      <div className="nav-connect">
+        <AnchorLink className="anchor-link" offset={50} href="#contact">
+          Let's Connect
+        </AnchorLink>
+      </div>
     </nav>
   );
 };

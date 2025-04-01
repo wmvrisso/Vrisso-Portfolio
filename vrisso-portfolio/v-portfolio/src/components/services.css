@@ -8,6 +8,7 @@
 }
 .services-title {
   position: relative;
+  margin-top: 20px;
 }
 .services-title h1 {
   padding: 0px 30px;
@@ -18,8 +19,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
-  padding: 60px;
+  gap: 10px;
+  padding: 40px;
   border-radius: 10px;
   border: 2px solid white;
   transition: 0.4s;
