@@ -29,12 +29,12 @@ const Navbar = () => {
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#services">
-            <p onClick={() => setMenu("services")}>Portfolio</p>
+            <p onClick={() => setMenu("services")}>Services</p>
           </AnchorLink>
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#work">
-            <p onClick={() => setMenu("work")}>Resume</p>
+            <p onClick={() => setMenu("work")}>Portfolio</p>
           </AnchorLink>
         </li>
         <li>

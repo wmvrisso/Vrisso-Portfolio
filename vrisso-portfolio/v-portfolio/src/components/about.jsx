@@ -16,16 +16,18 @@ const About = () => {
           <div className="about-para">
             <p>
               With 15 years of experience in Technical Management, I have built
-              a strong foundation in leadership and problem-solving. In recent
-              years, I’ve embraced a new challenge—expanding my expertise into
-              audio development.
+              a strong foundation in leadership, critical thinking and
+              problem-solving. In recent years, I’ve built a home music studio
+              and have embraced a new challenge—expanding my expertise into
+              software development.
             </p>
             <p>
               I am a recent graduate of the University of Oregon’s Coding
               Bootcamp, where I gained hands-on experience in full-stack web
-              development. My goal is to apply my skills in a real-world setting
-              through an internship, with the ambition of growing into a junior
-              developer role and contributing to innovative projects.
+              development. My goal is to transfer my skills in a real-world
+              setting through an internship, with the ambition of growing into a
+              role in audio developement and contributing to innovative
+              projects.
             </p>
           </div>
           <div className="about-skills">

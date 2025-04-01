@@ -95,6 +95,7 @@
   color: white;
   border-radius: 50px;
   background: linear-gradient(90deg, #00c8ff61, #92fe9d7d);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-size: 22px;
   padding: 20px 60px;
   margin-bottom: 50px;

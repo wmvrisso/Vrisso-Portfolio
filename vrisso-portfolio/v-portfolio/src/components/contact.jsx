@@ -12,7 +12,7 @@ const Contact = () => {
       </div>
       <div className="contact-section">
         <div className="contact-left">
-          <h1>Let's talk</h1>
+          <h1>Let's chat.</h1>
           <p>
             I'm currently looking for new opportunities. If you have a project
             that you want to discuss or just want to connect, feel free to reach
