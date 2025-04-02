@@ -106,3 +106,8 @@
   transform: scale(1.05);
   transition: 0.3s;
 }
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
