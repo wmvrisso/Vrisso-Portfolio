@@ -19,21 +19,59 @@
   grid-template-columns: 1fr 1fr 1fr; /* Three columns */
   gap: 60px; /* Space between items */
 }
-.mywork-container img {
+.mywork-container .work-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mywork-container .project-image {
   box-sizing: border-box;
   width: 300px; /* Adjust width as needed */
   height: auto; /* Maintains aspect ratio */
   object-fit: cover; /* Ensures proper scaling */
   border-radius: 10px; /* Optional: Rounds corners */
   transition: 0.3s; /* Smooth transition for hover effect */
-  cursor: pointer;
 }
-.mywork-container img:hover {
+.mywork-container .project-image:hover {
   transform: scale(1.1); /* Slightly enlarges the image on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
   border: 4px solid aquamarine; /* Optional: Adds a border on hover */
   border-radius: 10px; /* Maintains the rounded corners */
   transition: 0.3s; /* Ensures the transition is smooth */
+}
+.github-link {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.865); /* Light background for contrast */
+  padding: 0.5px;
+  border-radius: 50%;
+  transition: 0.3s; /* Smooth transition for hover effect */
+}
+
+.github-icon {
+  width: 34px; /* Small fixed size */
+  height: 34px;
+}
+.github-icon:hover {
+  opacity: 0.7; /* Subtle fade effect on hover */
+  transition: 0.3s; /* Smooth transition for hover effect */
+}
+.deployed-link {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: Outfit, sans-serif; /* Ensure consistency with the rest of the site */
+  color: rgb(255, 255, 255); /* Adjust color */
+  text-decoration: none;
+  text-align: center;
+}
+
+.deployed-link:hover {
+  text-decoration: underline; /* Adds an underline on hover */
+  cursor: pointer; /* Ensures it looks clickable */
+  color: aquamarine;
 }
 .mywork-showmore {
   display: flex;
