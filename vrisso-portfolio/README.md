@@ -6,7 +6,7 @@ This app was developed to serve as an online portfolio template. Updates are to 
 
 ## Usage
 
-URL of the app vrisso-portfolio.netlify.app
+URL of the app https://vrisso-portfolio.netlify.app/
 
 ## Contributing
 

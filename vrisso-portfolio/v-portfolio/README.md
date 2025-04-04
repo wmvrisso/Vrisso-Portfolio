@@ -1,12 +1,21 @@
-# React + Vite
+# Vrisso-Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This app was developed to serve as an online portfolio template. Updates are to be made to showcase the user's job development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Usage
 
-## Expanding the ESLint configuration
+URL of the app https://vrisso-portfolio.netlify.app/
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Contributing
+
+Ongoing contributions can be made using the GitHub repository.
+
+## Tests
+
+Tests can be ran using DevOps techniques using GitHub.
+
+## Questions
+
+If you have any questions, please contact me at wmvrisso@gmail.com.
