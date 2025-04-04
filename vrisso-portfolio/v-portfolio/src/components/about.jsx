@@ -17,9 +17,9 @@ const About = () => {
             <p>
               With 15 years of experience in Technical Management, I have built
               a strong foundation in leadership, critical thinking and
-              problem-solving. In recent years, I’ve built a home music studio
-              and have embraced a new challenge—expanding my expertise into
-              software development.
+              problem-solving. In recent years, I’ve explored new technologies
+              in music and have embraced a new challenge—expanding my expertise
+              into software development.
             </p>
             <p>
               I am a recent graduate of the University of Oregon’s Coding
