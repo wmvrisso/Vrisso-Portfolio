@@ -11,7 +11,10 @@ const Hero = () => {
       <h1>
         <span>I'm Will Vrisso,</span> a full-stack developer student.
       </h1>
-      <p>Based in Oregon, USA, I am focused on Audio Programming.</p>
+      <p>
+        Based in Oregon, USA, I am searching for internship opportunities in
+        Audio Development.
+      </p>
       <div className="hero-action">
         <div className="hero-connect">
           <AnchorLink className="anchor-link" offset={50} href="#contact">

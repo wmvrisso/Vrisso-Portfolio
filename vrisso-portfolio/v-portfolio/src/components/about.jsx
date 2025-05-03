@@ -15,19 +15,19 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p>
-              With 15 years of experience in Technical Management, I have built
-              a strong foundation in leadership, critical thinking and
-              problem-solving. In recent years, I’ve explored new technologies
-              in music and have embraced a new challenge—expanding my expertise
-              into software development.
+              With 15 years of experience in Hospitality Management, I have
+              built a strong foundation in leadership, critical thinking and
+              problem-solving. In recent years, I’ve been further developing my
+              skills by learning new technologies and I have embraced a new
+              challenge—expanding my expertise into software development.
             </p>
             <p>
               I am a recent graduate of the University of Oregon’s Coding
               Bootcamp, where I gained hands-on experience in full-stack web
-              development. My goal is to transfer my skills in a real-world
-              setting through an internship, with the ambition of growing into a
-              role in audio developement and contributing to innovative
-              projects.
+              development. I hope to apply my skills in a real-world setting
+              through an internship, with the long-term goal of advancing into
+              audio development and contributing to innovative projects.
+              Transferable skills from my recent work include:
             </p>
           </div>
           <div className="about-skills">
@@ -52,18 +52,23 @@ const About = () => {
       </div>
       <div className="about-achievements">
         <div className="about-achievement">
-          <h1>15+</h1>
-          <p>Years of Experience</p>
+          <h1>15 yrs.</h1>
+          <p>Managment Experience</p>
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>10+</h1>
-          <p>Projects Completed</p>
+          <h1>10 yrs.</h1>
+          <p>Sales & Marketing</p>
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>10+</h1>
-          <p>Happy Clients</p>
+          <h1>5 yrs.</h1>
+          <p>Maintenance Manufacturing</p>
+        </div>
+        <hr />
+        <div className="about-achievement">
+          <h1>5 yrs.</h1>
+          <p>IT Support</p>
         </div>
       </div>
     </div>
