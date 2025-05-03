@@ -20,9 +20,7 @@ const MyWork = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="github-link"
-              >
-                <img src={github_icon} alt="GitHub" className="github-icon" />
-              </a>
+              ></a>
               <a
                 href={work.deployed_link}
                 target="_blank"
@@ -36,8 +34,8 @@ const MyWork = () => {
         })}
       </div>
       <div className="mywork-showmore">
-        <p>Show More</p>
-        <img src={arrow_icon} alt="" />
+        <p>GitHub Projects</p>
+        <img src={github_icon} alt="" />
       </div>
     </div>
   );

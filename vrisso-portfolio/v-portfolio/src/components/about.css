@@ -13,6 +13,7 @@
   padding: 0px 30px;
   font-size: 80px;
   font-weight: 600;
+  color: rgb(234, 225, 218);
 }
 .about-left img {
   width: 500px;
@@ -32,6 +33,7 @@
   gap: 20px;
   font-size: 24px;
   font-weight: 500;
+  color: rgb(234, 225, 218);
 }
 .about-skills {
   display: flex;
@@ -55,7 +57,7 @@
   width: 50%;
   height: 8px;
   border-radius: 50px;
-  background: linear-gradient(90deg, #00c8ff61, #92fe9d7d);
+  background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
 }
 .about-achievements {
   display: flex;
@@ -73,7 +75,7 @@
 .about-achievement h1 {
   font-size: 50px;
   font-weight: 700;
-  background: linear-gradient(90deg, #00c8ff, #92fe9d);
+  background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

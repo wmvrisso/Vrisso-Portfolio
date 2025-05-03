@@ -95,7 +95,7 @@ const Contact = () => {
           {errors.message && <p className="error-message">{errors.message}</p>}{" "}
           {/* Error message for message */}
           <button type="submit" className="contact-submit">
-            Submit now
+            Submit
           </button>
         </form>
       </div>

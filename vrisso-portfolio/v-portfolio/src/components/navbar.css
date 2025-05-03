@@ -46,7 +46,7 @@
   font-size: 18px;
   font-family: "Outfit", sans-serif;
   cursor: pointer;
-  color: #ffffff;
+  color: rgb(234, 225, 218);
   position: relative;
   padding-bottom: 0px;
 }
@@ -71,8 +71,7 @@
 
 /* "Let's Connect" button */
 .nav-connect {
-  background: linear-gradient(90deg, #00c8ff61, #92fe9d7d);
-  color: white;
+  background: rgb(234, 225, 218);
   font-family: "Outfit", sans-serif;
   font-size: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -83,6 +82,10 @@
   font-weight: bold;
   transition: 0.2s;
   position: relative;
+}
+.nav-connect a {
+  text-decoration: none;
+  color: black;
 }
 
 /* Hover effect for button */
@@ -153,7 +156,7 @@
     font-size: 18px;
     font-family: "Outfit", sans-serif;
     cursor: pointer;
-    color: #ffffff;
+    color: rgb(234, 225, 218);
     position: relative;
     padding-bottom: 0px;
   }
