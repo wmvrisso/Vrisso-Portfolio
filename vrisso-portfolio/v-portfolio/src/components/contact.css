@@ -75,7 +75,7 @@
   width: 700px; /* Adjust width as needed */
   height: 78px; /* Adjust height as needed */
   padding-left: 20px; /* Padding for text */
-  background: #36393a;
+  background: rgb(45, 46, 48);
   color: rgb(234, 225, 218);
   font-family: Outfit;
   font-size: 20px;
@@ -85,7 +85,7 @@
   border: none;
   padding: 25px 20px; /* Padding for text */
   border-radius: 4px;
-  background: #36393a;
+  background: rgb(45, 46, 48);
   color: rgb(234, 225, 218);
   font-family: Outfit;
   font-size: 20px;
