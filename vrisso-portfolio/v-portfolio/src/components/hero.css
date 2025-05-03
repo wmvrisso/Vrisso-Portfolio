@@ -37,14 +37,14 @@
   font-size: 24px;
 }
 .hero-connect {
-  padding: 25px 45px;
+  padding: 25px 60px;
   border-radius: 50px;
   background: linear-gradient(90deg, #00c8ff61, #92fe9d7d);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 .hero-resume {
-  padding: 25px 55px;
+  padding: 25px 45px;
   border-radius: 50px;
   border: 2px solid white;
   cursor: pointer;
