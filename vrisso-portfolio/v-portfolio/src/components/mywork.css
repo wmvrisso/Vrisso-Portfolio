@@ -16,19 +16,29 @@
   color: rgb(234, 225, 218);
 }
 .mywork-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Three columns */
-  gap: 60px; /* Space between items */
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  gap: 80px;
+  padding: 10px 0;
+  width: 100%;
+  scroll-snap-type: x mandatory; /* enables snapping */
 }
-.mywork-container .work-item {
-  position: relative;
+
+.mywork-container::-webkit-scrollbar {
+  display: none;
+}
+
+.work-item {
+  flex: 0 0 400px; /* match image width */
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .mywork-container .project-image {
   box-sizing: border-box;
-  width: 300px; /* Adjust width as needed */
+  width: 400px; /* Adjust width as needed */
   height: auto; /* Maintains aspect ratio */
   object-fit: cover; /* Ensures proper scaling */
   border-radius: 10px; /* Optional: Rounds corners */
@@ -93,4 +103,60 @@
 }
 .mywork-showmore:hover {
   border-color: rgb(180, 170, 163); /* Border color on hover */
+  transform: scale(1.1); /* Slightly enlarges the image on hover */
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.carousel-arrow {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: Outfit, sans-serif;
+  background-color: transparent;
+  border: 2px solid rgb(234, 225, 218);
+  color: rgb(234, 225, 218);
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carousel-arrow:hover {
+  background-color: rgb(234, 225, 218);
+  color: black;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .mywork {
+    gap: 50px;
+    margin: 50px 70px; /* Adjusted for smaller screens */
+    align-items: start; /* Align items to the start */
+  }
+  .mywork-title h1 {
+    padding: 0px;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .carousel-arrow {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Outfit, sans-serif;
+    background-color: transparent;
+    border: 2px solid rgb(234, 225, 218);
+    color: rgb(234, 225, 218);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .mywork-showmore {
+    padding: 20px 40px; /* Adjusted padding for smaller screens */
+    font-size: 18px; /* Adjusted font size for smaller screens */
+  }
 }

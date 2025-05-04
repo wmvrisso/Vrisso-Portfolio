@@ -53,17 +53,28 @@ const About = () => {
       <div className="about-achievements">
         <div className="about-achievement">
           <h1>15 yrs.</h1>
-          <p>Managment Experience</p>
+          <p>
+            Managment
+            <br />
+            Experience
+          </p>
         </div>
         <hr />
         <div className="about-achievement">
           <h1>10 yrs.</h1>
-          <p>Sales & Marketing</p>
+          <p>
+            Sales & <br />
+            Marketing
+          </p>
         </div>
         <hr />
         <div className="about-achievement">
           <h1>5 yrs.</h1>
-          <p>Maintenance Manufacturing</p>
+          <p>
+            Maintenance
+            <br />
+            Manufacturing
+          </p>
         </div>
         <hr />
         <div className="about-achievement">

@@ -100,7 +100,7 @@
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 1290px) and (min-width: 880px) {
+@media (max-width: 1290px) and (min-width: 768px) {
   /* Navbar container */
   .navbar {
     display: flex;
@@ -183,7 +183,7 @@
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
   /* Navbar container */
   .navbar {
     display: flex;
