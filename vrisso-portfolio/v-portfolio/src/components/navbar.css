@@ -14,9 +14,8 @@
 /* Ensuring child elements stay centered */
 .nav-logo {
   position: relative;
-  top: 0px; /* Adjust as needed */
-  left: 10px;
-  z-index: 1100;
+  display: flex;
+  align-items: center;
 }
 
 /* Logo styling */
@@ -101,7 +100,7 @@
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 1290px) and (min-width: 881px) {
+@media (max-width: 1290px) and (min-width: 880px) {
   /* Navbar container */
   .navbar {
     display: flex;
@@ -126,11 +125,12 @@
     top: 0px; /* Adjust as needed */
     left: 10px;
     z-index: 1100;
+    width: 250px; /* Adjust size */
   }
 
   /* Logo styling */
   .nav-logo img {
-    width: 250px; /* Adjust size */
+    width: 220px; /* Adjust size */
     position: relative;
     top: 5px; /* Adjust vertical position */
     margin-left: 50px; /* Adjust as needed */
@@ -168,7 +168,7 @@
     top: 100%; /* Position below the text */
     width: 100%;
     height: 7px;
-    background: linear-gradient(to right, #00c8ff61, #92fe9d7d);
+    background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease-in-out;
@@ -184,15 +184,43 @@
 }
 
 @media (max-width: 880px) {
+  /* Navbar container */
   .navbar {
-    margin: 20px 50px;
+    display: flex;
+    align-items: center;
+    position: fixed; /* Keep navbar visible while scrolling */
+    height: 150px; /* Fixed height for the navbar */
+    width: 100%;
+    background: rgba(
+      0,
+      0,
+      0,
+      0.8
+    ); /* Slight transparency for a modern effect */
+    padding: 0px 0px;
+    z-index: 1000; /* Ensure it stays above other content */
+    backdrop-filter: blur(20px); /* Adds a smooth background blur effect */
+  }
+
+  .nav-connect {
+    display: none;
+  }
+
+  .nav-logo {
+    justify-content: center; /* Center the image horizontally */
+    width: 100%;
+  }
+
+  .nav-logo img {
+    margin-left: 150; /* Center the image */
+    position: relative;
+    top: 0;
   }
 
   .nav-mob-open {
     display: block;
-    position: relative;
+    position: fixed;
     right: 30px; /* Adjust as needed */
-    width: 40px; /* Adjust as needed */
   }
   .nav-mob-close {
     display: block;
@@ -212,26 +240,10 @@
     width: 350px; /* Width of the menu */
     height: 100vh; /* Full height of the viewport */
     z-index: 2;
-    transition: 0.2s;
+    transition: right 0.5s;
     right: -350px; /* Start off-screen */
   }
   .nav-menu li {
-    font-size: 30px; /* Larger font size for better visibility */
-    padding-left: 100px; /* Indent menu items */
-    flex-direction: row;
-    gap: 20px; /* Space between icon and text */
-  }
-  /* Logo styling */
-  .nav-logo img {
-    flex-direction: column;
-    align-items: center;
-    width: 250px; /* Adjust size */
-    top: 5px; /* Adjust vertical position */
-    pointer-events: auto; /* Allow interaction with the logo */
-    z-index: 1100;
-  }
-
-  .nav-connect {
-    display: none;
+    display: none; /* Hide menu items by default */
   }
 }

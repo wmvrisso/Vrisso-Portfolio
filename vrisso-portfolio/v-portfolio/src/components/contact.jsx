@@ -1,43 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 import "../components/contact.css";
 import mail_icon from "../assets/images/mail_icon2.svg";
 import location_icon from "../assets/images/location_icon.svg";
 import phone_icon from "../assets/images/phone_icon.svg";
 
 const Contact = () => {
-  // State to hold error messages for each field
-  const [errors, setErrors] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
 
-  // Function to handle the blur event and validate the fields
-  const handleBlur = (e) => {
-    const { name, value } = e.target;
+    formData.append("access_key", "f8bd14be-d881-4de6-b352-4636d4109c03");
 
-    if (!value) {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        [name]: "This field is required.",
-      }));
-    } else if (name === "email" && !validateEmail(value)) {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        [name]: "Please enter a valid email address.",
-      }));
-    } else {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        [name]: "",
-      }));
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      alert("Message sent successfully!");
     }
-  };
-
-  // Email validation function
-  const validateEmail = (email) => {
-    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return regex.test(email);
   };
 
   return (
@@ -66,34 +54,20 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form action="" className="contact-right">
+        <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor="name">Your Name:</label>
-          <input
-            type="text"
-            placeholder="Enter your name"
-            name="name"
-            onBlur={handleBlur} // Trigger validation on blur
-          />
-          {errors.name && <p className="error-message">{errors.name}</p>}{" "}
-          {/* Error message for name */}
+          <input type="text" placeholder="Enter your name" name="name" />
+
           <label htmlFor="email">Your Email:</label>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            name="email"
-            onBlur={handleBlur} // Trigger validation on blur
-          />
-          {errors.email && <p className="error-message">{errors.email}</p>}{" "}
-          {/* Error message for email */}
+          <input type="email" placeholder="Enter your email" name="email" />
+
           <label htmlFor="message">Write your message here:</label>
           <textarea
             name="message"
             rows="8"
             placeholder="Enter your message"
-            onBlur={handleBlur} // Trigger validation on blur
           ></textarea>
-          {errors.message && <p className="error-message">{errors.message}</p>}{" "}
-          {/* Error message for message */}
+
           <button type="submit" className="contact-submit">
             Submit
           </button>
