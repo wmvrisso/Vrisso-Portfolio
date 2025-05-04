@@ -11,9 +11,9 @@
 }
 
 .footer-logo {
-  width: 180px; /* Adjust size as needed */
-  top: 60px; /* Adjust position as needed */
-  right: 10px; /* Adjust position as needed */
+  width: 160px; /* Adjust size as needed */
+  top: 55px; /* Adjust position as needed */
+  right: 25px; /* Adjust position as needed */
   position: relative;
   display: block;
   z-index: 1100;
@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 118px; /* Adds spacing between logo and icons */
-  margin-right: 10px; /* Adjust as needed */
+  margin-right: 0px; /* Adjust as needed */
 }
 
 .social-icon {

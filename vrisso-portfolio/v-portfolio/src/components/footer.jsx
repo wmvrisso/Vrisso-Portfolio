@@ -1,6 +1,6 @@
 import React from "react";
 import "../components/footer.css";
-import footer_logo from "../assets/images/v_gradient_logo_1.png"; // Placeholder for the footer logo
+import footer_logo from "../assets/images/v-gradient-logo-bold.png"; // Placeholder for the footer logo
 import github_icon from "../assets/images/github-icon.svg"; // GitHub icon
 import linkedin_icon from "../assets/images/linkedin-icon.svg"; // LinkedIn icon
 import discord_icon from "../assets/images/discord-icon.svg"; // Discord icon

@@ -21,7 +21,7 @@
 
 /* Logo styling */
 .nav-logo img {
-  width: 250px; /* Adjust size */
+  width: 220px; /* Adjust size */
   position: relative;
   top: 5px; /* Adjust vertical position */
   margin-left: 150px; /* Adjust as needed */
@@ -74,7 +74,6 @@
   background: rgb(234, 225, 218);
   font-family: "Outfit", sans-serif;
   font-size: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   padding: 15px 25px;
   border-radius: 7px;
   margin-right: 230px;
@@ -94,7 +93,7 @@
 }
 .anchor-link {
   text-decoration: none; /* Remove underline */
-  color: #ffffff; /* Text color */
+  color: rgb(234, 225, 218); /* Text color */
 }
 .nav-mob-open,
 .nav-mob-close {

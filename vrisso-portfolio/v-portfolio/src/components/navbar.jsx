@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import logo from "../assets/images/v_gradient_logo_1.png";
+import logo from "../assets/images/v-gradient-logo-bold.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import menu_open from "../assets/images/hamburger-menu-icon.svg";
 import menu_close from "../assets/images/menu-close.svg";
@@ -34,7 +34,7 @@ const Navbar = () => {
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#work">
-            <p onClick={() => setMenu("work")}>Portfolio</p>
+            <p onClick={() => setMenu("work")}>Projects</p>
           </AnchorLink>
         </li>
         <li>
