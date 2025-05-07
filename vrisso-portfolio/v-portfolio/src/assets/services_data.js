@@ -1,15 +1,15 @@
 const Services_Data = [
   {
     s_no: "01",
-    s_name: "Web Development",
+    s_name: "Product Development",
     s_desc:
-      "I create responsive and dynamic websites using modern web technologies.",
+      "I develop innovative product concepts and contribute to project planning & execution.",
   },
   {
     s_no: "02",
-    s_name: "Audio Development",
+    s_name: "Audio Programming",
     s_desc:
-      "I specialize in audio programming and interactive audio solutions.",
+      "I specialize in audio programming and provide interactive audio solutions.",
   },
   {
     s_no: "03",
@@ -21,19 +21,19 @@ const Services_Data = [
     s_no: "04",
     s_name: "UI/UX Design",
     s_desc:
-      "I design user-friendly interfaces that provide an exceptional user experience.",
+      "I design user-friendly interfaces that provide an interactive user experience.",
   },
   {
     s_no: "05",
     s_name: "Data Management",
     s_desc:
-      "I manage databases efficiently to ensure data integrity and security.",
+      "I develop & manage databases efficiently to ensure data integrity and security.",
   },
   {
     s_no: "06",
-    s_name: "Cloud Solutions",
+    s_name: "Testing & Deployment",
     s_desc:
-      "I provide cloud-based solutions for scalable and flexible application deployment.",
+      "I conduct thorough testing and deploy applications to ensure reliability.",
   },
 ];
 
