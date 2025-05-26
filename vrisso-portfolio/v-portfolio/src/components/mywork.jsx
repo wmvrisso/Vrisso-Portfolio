@@ -26,7 +26,7 @@ const MyWork = () => {
   return (
     <div id="work" className="mywork">
       <div className="mywork-title">
-        <h1>My latest work</h1>
+        <h1>Projects</h1>
       </div>
 
       {/* Carousel arrows */}
