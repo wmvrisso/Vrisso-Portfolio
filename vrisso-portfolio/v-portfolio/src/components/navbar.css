@@ -20,7 +20,7 @@
 
 /* Logo styling */
 .nav-logo img {
-  width: 220px; /* Adjust size */
+  width: 175px; /* Adjust size */
   position: relative;
   top: 5px; /* Adjust vertical position */
   margin-left: 150px; /* Adjust as needed */
@@ -100,7 +100,105 @@
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 1290px) and (min-width: 768px) {
+@media (max-width: 1200px) and (min-width: 1024px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    position: fixed; /* Keep navbar visible while scrolling */
+    height: 150px; /* Fixed height for the navbar */
+    width: 100%;
+    background: rgba(
+      0,
+      0,
+      0,
+      0.8
+    ); /* Slight transparency for a modern effect */
+    padding: 0px 0px;
+    z-index: 1000; /* Ensure it stays above other content */
+    backdrop-filter: blur(20px); /* Adds a smooth background blur effect */
+  }
+
+  /* Ensuring child elements stay centered */
+  .nav-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Logo styling */
+  .nav-logo img {
+    width: 160px; /* Adjust size */
+    position: relative;
+    top: 5px; /* Adjust vertical position */
+    margin-left: 150px; /* Adjust as needed */
+    pointer-events: auto; /* Allow interaction with the logo */
+    z-index: 1100;
+  }
+
+  /* Navigation menu */
+  .nav-menu {
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto; /* Center menu */
+    padding: 0;
+    flex: 1; /* Ensures even spacing */
+    justify-content: center; /* Centers menu items */
+  }
+
+  /* Menu items */
+  .nav-menu li {
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    cursor: pointer;
+    color: rgb(234, 225, 218);
+    position: relative;
+    padding-bottom: 0px;
+  }
+
+  /* Underline effect */
+  .nav-menu li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 120%; /* Position below the text */
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-menu li:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* "Let's Connect" button */
+  .nav-connect {
+    display: none;
+  }
+  .nav-connect a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Hover effect for button */
+  .nav-connect:hover {
+    transform: scale(1.05);
+  }
+  .anchor-link {
+    text-decoration: none; /* Remove underline */
+    color: rgb(234, 225, 218); /* Text color */
+  }
+  .nav-mob-open,
+  .nav-mob-close {
+    display: none; /* Hide by default */
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
   /* Navbar container */
   .navbar {
     display: flex;
@@ -130,9 +228,9 @@
 
   /* Logo styling */
   .nav-logo img {
-    width: 220px; /* Adjust size */
+    width: 150px; /* Adjust size */
     position: relative;
-    top: 5px; /* Adjust vertical position */
+    top: 0px; /* Adjust vertical position */
     margin-left: 50px; /* Adjust as needed */
     pointer-events: auto; /* Allow interaction with the logo */
     z-index: 1100;
@@ -212,9 +310,11 @@
   }
 
   .nav-logo img {
-    margin-left: 150; /* Center the image */
-    position: relative;
-    top: 0;
+    width: 150px; /* Adjust size as needed */
+    position: absolute; /* Position it absolutely */
+    top: 50%; /* Center it vertically */
+    left: 25%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
   }
 
   .nav-mob-open {

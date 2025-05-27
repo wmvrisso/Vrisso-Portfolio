@@ -35,12 +35,12 @@ const Contact = () => {
       </div>
       <div className="contact-section">
         <div className="contact-left">
-          <h1>Connect</h1>
+          <h1>Contact</h1>
           <p>
-            I'm currently looking for new opportunities to make honest,
-            hard-working contributions to innovative projects. If you have a
-            project that you want to discuss or just want to connect, feel free
-            to reach out. Cheers.
+            I'm currently looking for new opportunities to make honest, reliable
+            contributions to innovative projects. If you have a project that you
+            want to discuss or just want to connect, feel free to reach out.
+            Cheers.
           </p>
           <div className="contact-details">
             <div className="contact-detail">

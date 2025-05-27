@@ -9,11 +9,11 @@ const Hero = () => {
     <div id="home" className="hero">
       <img src={profile_img} alt="Profile" />
       <h1>
-        <span>I'm Will Vrisso,</span> a full-stack developer student.
+        <span>I'm Will Vrisso,</span> a full-stack developer graduate.
       </h1>
       <p>
-        Based in Oregon, USA, I am seeking an internship opportunity in Audio
-        Development.
+        Based in Oregon, USA, I am seeking an apprenticeship opportunity in
+        Audio Development.
       </p>
       <div className="hero-action">
         <div className="hero-connect">
