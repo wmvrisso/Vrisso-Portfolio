@@ -282,68 +282,72 @@
 }
 
 @media (max-width: 768px) {
-  /* Navbar container */
-  .navbar {
-    display: flex;
-    align-items: center;
-    position: fixed; /* Keep navbar visible while scrolling */
-    height: 150px; /* Fixed height for the navbar */
-    width: 100%;
-    background: rgba(
-      0,
-      0,
-      0,
-      0.8
-    ); /* Slight transparency for a modern effect */
-    padding: 0px 0px;
-    z-index: 1000; /* Ensure it stays above other content */
-    backdrop-filter: blur(20px); /* Adds a smooth background blur effect */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -350px; /* hidden offscreen */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    width: 350px;
+    height: 100vh;
+    z-index: 1000;
+    transition: right 0.5s ease;
+    padding: 40px 10px;
+    overflow-y: auto;
+
+    /* No background by default */
+    background-color: transparent;
   }
 
-  .nav-connect {
-    display: none;
+  /* Background only when menu is open */
+  .nav-menu.active {
+    right: -50px;
+    background-color: #000000d9; /* Add background here */
   }
 
-  .nav-logo {
-    justify-content: center; /* Center the image horizontally */
-    width: 100%;
+  .nav-menu li {
+    display: none; /* Hidden by default */
   }
 
-  .nav-logo img {
-    width: 150px; /* Adjust size as needed */
-    position: absolute; /* Position it absolutely */
-    top: 50%; /* Center it vertically */
-    left: 25%; /* Center it horizontally */
-    transform: translate(-50%, -50%); /* Adjust for centering */
+  .nav-menu.active li {
+    display: block; /* Shown when menu is open */
+    padding-left: 20px; /* Add padding for better spacing */
   }
 
   .nav-mob-open {
     display: block;
     position: fixed;
-    right: 30px; /* Adjust as needed */
+    top: 0px;
+    right: 20px;
+    width: 80px;
+    height: 120px;
+    z-index: 1001;
+    cursor: pointer;
   }
+
   .nav-mob-close {
     display: block;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    width: 65px;
+    height: 70px;
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+  .nav-logo img {
+    width: 150px; /* Adjust size */
     position: relative;
-    width: 40px; /* Adjust as needed */
-    top: 30px;
-    left: 290px;
-    cursor: pointer; /* Optional: Makes it clickable */
+    top: 0px; /* Adjust vertical position */
+    margin-left: 40px; /* Adjust as needed */
+    pointer-events: auto; /* Allow interaction with the logo */
+    z-index: 1100;
   }
-  .nav-menu {
-    position: fixed; /* Hide the menu by default */
-    flex-direction: column;
-    align-items: start; /* Center items */
-    top: 0; /* Start at the top of the screen */
-    gap: 30px; /* Space between items */
-    background-color: #00c8ff61; /* Background color */
-    width: 350px; /* Width of the menu */
-    height: 100vh; /* Full height of the viewport */
-    z-index: 2;
-    transition: right 0.5s;
-    right: -350px; /* Start off-screen */
-  }
-  .nav-menu li {
-    display: none; /* Hide menu items by default */
+
+  .nav-connect {
+    display: none;
   }
 }
