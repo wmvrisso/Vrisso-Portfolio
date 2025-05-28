@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import "../components/mywork.css";
 import mywork_data from "../assets/mywork_data";
-import arrow_icon from "../assets/images/right_arrow_icon.svg";
+import LeftArrow from "../assets/arrow-left-5-svgrepo-com.svg";
+import RightArrow from "../assets/right-arrow-svgrepo-com.svg";
 import github_icon from "../assets/images/github-icon.svg"; // GitHub icon
 
 const chunkArray = (array, size) =>
@@ -32,10 +33,10 @@ const MyWork = () => {
       {/* Carousel arrows */}
       <div className="carousel-controls">
         <button className="carousel-arrow" onClick={() => scroll("left")}>
-          ←
+          <img src={LeftArrow} alt="Scroll Left" />
         </button>
         <button className="carousel-arrow" onClick={() => scroll("right")}>
-          →
+          <img src={RightArrow} alt="Scroll Right" />
         </button>
       </div>
 
