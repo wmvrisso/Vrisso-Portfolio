@@ -114,7 +114,11 @@
 }
 
 .carousel-arrow {
-  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 10px;
   font-weight: 500;
   font-family: Outfit, sans-serif;
   background-color: transparent;
@@ -124,6 +128,12 @@
   border-radius: 20px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.carousel-arrow img {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  object-fit: contain;
 }
 
 .carousel-arrow:hover {

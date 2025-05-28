@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import "../components/mywork.css";
 import mywork_data from "../assets/mywork_data";
-import LeftArrow from "../assets/arrow-left-5-svgrepo-com.svg";
-import RightArrow from "../assets/right-arrow-svgrepo-com.svg";
+import LeftArrow from "../assets/images/arrow-left-5-svgrepo-com.svg";
+import RightArrow from "../assets/images/right-arrow-svgrepo-com.svg";
 import github_icon from "../assets/images/github-icon.svg"; // GitHub icon
 
 const chunkArray = (array, size) =>

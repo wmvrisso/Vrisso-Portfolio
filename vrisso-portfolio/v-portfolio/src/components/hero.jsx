@@ -9,7 +9,7 @@ const Hero = () => {
     <div id="home" className="hero">
       <img src={profile_img} alt="Profile" />
       <h1>
-        <span>I'm Will Vrisso,</span> a full-stack developer graduate.
+        <span>Will Vrisso |</span> Full-stack Developer Graduate
       </h1>
       <p>
         Based in Oregon, USA, I am seeking an apprenticeship opportunity in
