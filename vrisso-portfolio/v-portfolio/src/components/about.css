@@ -35,6 +35,20 @@
   font-weight: 500;
   color: rgb(234, 225, 218);
 }
+
+.skill-bar.html-css {
+  width: clamp(200px, 50vw, 400px);
+}
+.skill-bar.react {
+  width: clamp(200px, 45vw, 370px);
+}
+.skill-bar.js {
+  width: clamp(200px, 45vw, 370px);
+}
+.skill-bar.next {
+  width: clamp(200px, 40vw, 300px);
+}
+
 .about-skills {
   display: flex;
   flex-direction: column;
@@ -132,7 +146,9 @@
     font-size: 20px;
   }
   .about-skill hr {
-    height: 6px;
+    margin-left: -40px;
+    height: 8px;
+    background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
   }
   .about-achievements {
     justify-content: space-between;
@@ -191,7 +207,9 @@
     font-size: 20px;
   }
   .about-skill hr {
-    height: 6px;
+    margin-left: -40px;
+    height: 8px;
+    background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
   }
   .about-achievements {
     justify-content: space-between;
@@ -214,7 +232,7 @@
 
 @media (max-width: 768px) {
   .about {
-    gap: 80px;
+    gap: 50px;
     margin: 50px 70px;
     align-items: start;
   }
@@ -229,17 +247,24 @@
     display: none;
   }
   .about-para {
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 16px; /* slightly smaller for small screens */
+    line-height: 28px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px; /* horizontal padding for breathing space */
+    box-sizing: border-box;
+    text-align: left; /* optional: adjust for better alignment */
   }
   .about-skills {
     gap: 20px;
   }
   .about-skill p {
-    font-size: 20px;
+    font-size: 16px;
   }
   .about-skill hr {
-    height: 6px;
+    margin-left: -90px;
+    height: 8px;
+    background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
   }
   .about-achievements {
     justify-content: space-between;
