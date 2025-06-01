@@ -51,10 +51,16 @@
   }
   .footer-top {
     flex-direction: column;
-    gap: 50px;
+    align-items: center; /* Ensures all children (including logo) are centered */
+    gap: 10px;
   }
   .footer-logo {
-    display: none;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto -165px auto; /* 20px space below the logo */
+    position: static;
   }
   .footer-socials {
     display: flex;

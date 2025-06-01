@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../assets/images/v-gradient-logo-bold.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import menu_open from "../assets/images/open-menu.svg";
+import menu_open from "../assets/images/ham-open-menu.svg";
 import menu_close from "../assets/images/x-menu.svg";
 
 const Navbar = () => {

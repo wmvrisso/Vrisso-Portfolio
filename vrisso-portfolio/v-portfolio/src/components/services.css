@@ -162,7 +162,10 @@
     max-width: 300px;
   }
   .services-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
+    padding: 0 16px; /* adds space on left and right */
+    width: 100%;
+    box-sizing: border-box;
   }
 }

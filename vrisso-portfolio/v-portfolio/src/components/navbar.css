@@ -282,6 +282,38 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: flex-start;
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0;
+    z-index: 1000;
+    backdrop-filter: blur(20px);
+  }
+
+  .nav-logo {
+    width: 100%; /* Take full width */
+    position: relative;
+    flex-direction: column; /* Stack logo vertically */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-logo img {
+    position: static; /* Remove relative positioning */
+    align-items: center;
+    margin: 0 auto -150px auto; /* 20px space below the logo */
+    transform: translateX(-5%);
+    width: 150px;
+    z-index: 900; /* Set below hamburger menu (z-index: 1001) */
+    pointer-events: none; /* Prevent blocking menu clicks */
+  }
+
   .nav-menu {
     position: fixed;
     top: 0;
@@ -336,15 +368,6 @@
     height: 70px;
     z-index: 1001;
     cursor: pointer;
-  }
-
-  .nav-logo img {
-    width: 150px; /* Adjust size */
-    position: relative;
-    top: 0px; /* Adjust vertical position */
-    margin-left: 40px; /* Adjust as needed */
-    pointer-events: auto; /* Allow interaction with the logo */
-    z-index: 1100;
   }
 
   .nav-connect {
