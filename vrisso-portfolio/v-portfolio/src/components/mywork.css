@@ -219,6 +219,14 @@
     width: 100%;
     scroll-snap-type: x mandatory; /* enables snapping */
   }
+  .mywork-container .project-image {
+    box-sizing: border-box;
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures proper scaling */
+    border-radius: 10px; /* Optional: Rounds corners */
+    transition: 0.3s; /* Smooth transition for hover effect */
+  }
 
   .carousel-arrow {
     font-size: 30px;
@@ -227,14 +235,14 @@
     background-color: transparent;
     border: 2px solid rgb(234, 225, 218);
     color: rgb(234, 225, 218);
-    padding: 5px 15px;
+    padding: 0px 10px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
     text-align: center;
   }
   .mywork-showmore {
-    padding: 20px 40px; /* Adjusted padding for smaller screens */
+    padding: 15px 40px; /* Adjusted padding for smaller screens */
     font-size: 18px; /* Adjusted font size for smaller screens */
   }
 }
@@ -250,6 +258,14 @@
     font-size: 40px;
     font-weight: 600;
   }
+  .mywork-container .project-image {
+    box-sizing: border-box;
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures proper scaling */
+    border-radius: 10px; /* Optional: Rounds corners */
+    transition: 0.3s; /* Smooth transition for hover effect */
+  }
   .carousel-arrow {
     font-size: 30px;
     font-weight: 500;
@@ -257,14 +273,14 @@
     background-color: transparent;
     border: 2px solid rgb(234, 225, 218);
     color: rgb(234, 225, 218);
-    padding: 5px 15px;
+    padding: 0px 10px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
     text-align: center;
   }
   .mywork-showmore {
-    padding: 20px 40px; /* Adjusted padding for smaller screens */
+    padding: 15px 40px; /* Adjusted padding for smaller screens */
     font-size: 18px; /* Adjusted font size for smaller screens */
   }
 }
