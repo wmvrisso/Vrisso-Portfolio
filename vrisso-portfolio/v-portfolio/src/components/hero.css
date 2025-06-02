@@ -108,20 +108,23 @@
     margin-bottom: 20px;
   }
   .hero-connect {
-    padding: 15px 40px; /* Adjusted padding for smaller screens */
-    font-size: 15px; /* Adjusted font size for smaller screens */
+    padding: 20px 45px; /* Adjusted padding for smaller screens */
+    font-size: 18px; /* Adjusted font size for smaller screens */
   }
   .hero-connect a {
     text-decoration: none;
     color: black;
   }
   .hero-resume {
-    padding: 15px 40px; /* Adjusted padding for smaller screens */
-    font-size: 15px; /* Adjusted font size for smaller screens */
+    padding: 20px 45px; /* Adjusted padding for smaller screens */
+    font-size: 18px; /* Adjusted font size for smaller screens */
   }
   .hero-resume a {
     text-decoration: none;
     color: rgb(234, 225, 218);
+  }
+  .hero-action {
+    margin-bottom: 100px;
   }
 }
 
@@ -157,5 +160,8 @@
   .hero-resume a {
     text-decoration: none;
     color: rgb(234, 225, 218);
+  }
+  .hero-action {
+    margin-bottom: 100px;
   }
 }
