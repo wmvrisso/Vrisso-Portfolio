@@ -107,11 +107,21 @@
     margin: 10px 0px;
     margin-bottom: 20px;
   }
-  .hero-action {
-    gap: 16px;
-    font-size: 15px;
-    margin-bottom: 50px;
-    font-weight: 500;
+  .hero-connect {
+    padding: 15px 40px; /* Adjusted padding for smaller screens */
+    font-size: 15px; /* Adjusted font size for smaller screens */
+  }
+  .hero-connect a {
+    text-decoration: none;
+    color: black;
+  }
+  .hero-resume {
+    padding: 15px 40px; /* Adjusted padding for smaller screens */
+    font-size: 15px; /* Adjusted font size for smaller screens */
+  }
+  .hero-resume a {
+    text-decoration: none;
+    color: rgb(234, 225, 218);
   }
 }
 
@@ -132,10 +142,20 @@
     margin: 10px 0px;
     margin-bottom: 20px;
   }
-  .hero-action {
-    gap: 16px;
-    font-size: 15px;
-    margin-bottom: 50px;
-    font-weight: 500;
+  .hero-connect {
+    padding: 15px 40px; /* Adjusted padding for smaller screens */
+    font-size: 15px; /* Adjusted font size for smaller screens */
+  }
+  .hero-connect a {
+    text-decoration: none;
+    color: black;
+  }
+  .hero-resume {
+    padding: 15px 40px; /* Adjusted padding for smaller screens */
+    font-size: 15px; /* Adjusted font size for smaller screens */
+  }
+  .hero-resume a {
+    text-decoration: none;
+    color: rgb(234, 225, 218);
   }
 }

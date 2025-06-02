@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
         <div className="hero-resume">
           <a href={resume_pdf} download="Will_Vrisso_Resume.pdf">
-            My Resume
+            Resume
           </a>
         </div>
       </div>
