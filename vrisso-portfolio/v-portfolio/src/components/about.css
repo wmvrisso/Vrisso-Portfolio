@@ -262,6 +262,19 @@
   .about-skill p {
     font-size: 16px;
   }
+  .skill-bar.html-css {
+    width: clamp(200px, 50vw, 300px);
+  }
+  .skill-bar.react {
+    width: clamp(200px, 45vw, 270px);
+  }
+  .skill-bar.js {
+    width: clamp(200px, 45vw, 270px);
+  }
+  .skill-bar.next {
+    width: clamp(200px, 40vw, 200px);
+  }
+
   .about-skill hr {
     margin-left: -90px;
     height: 8px;
@@ -315,6 +328,18 @@
   }
   .about-skill p {
     font-size: 16px;
+  }
+  .skill-bar.html-css {
+    width: clamp(200px, 50vw, 300px);
+  }
+  .skill-bar.react {
+    width: clamp(200px, 45vw, 270px);
+  }
+  .skill-bar.js {
+    width: clamp(200px, 45vw, 270px);
+  }
+  .skill-bar.next {
+    width: clamp(200px, 40vw, 200px);
   }
   .about-skill hr {
     margin-left: -90px;
