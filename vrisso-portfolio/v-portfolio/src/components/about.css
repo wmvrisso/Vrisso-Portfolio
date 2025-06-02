@@ -263,16 +263,16 @@
     font-size: 16px;
   }
   .skill-bar.html-css {
-    width: clamp(200px, 50vw, 300px);
+    width: clamp(100px, 50vw, 300px);
   }
   .skill-bar.react {
-    width: clamp(200px, 45vw, 270px);
+    width: clamp(100px, 45vw, 270px);
   }
   .skill-bar.js {
-    width: clamp(200px, 45vw, 270px);
+    width: clamp(100px, 45vw, 270px);
   }
   .skill-bar.next {
-    width: clamp(200px, 40vw, 200px);
+    width: clamp(100px, 40vw, 200px);
   }
 
   .about-skill hr {
@@ -330,16 +330,16 @@
     font-size: 16px;
   }
   .skill-bar.html-css {
-    width: clamp(200px, 50vw, 300px);
+    width: clamp(200px, 50vw, 200px);
   }
   .skill-bar.react {
-    width: clamp(200px, 45vw, 270px);
+    width: clamp(200px, 45vw, 170px);
   }
   .skill-bar.js {
-    width: clamp(200px, 45vw, 270px);
+    width: clamp(200px, 45vw, 170px);
   }
   .skill-bar.next {
-    width: clamp(200px, 40vw, 200px);
+    width: clamp(200px, 40vw, 100px);
   }
   .about-skill hr {
     margin-left: -90px;

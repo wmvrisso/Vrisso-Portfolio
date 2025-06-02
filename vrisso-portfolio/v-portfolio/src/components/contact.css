@@ -224,7 +224,7 @@
 @media (max-width: 768px) and (min-width: 480px) {
   .contact {
     gap: 50px;
-    margin: 50px 50px;
+    margin: 50px 40px;
     align-items: start;
   }
   .contact-title h1 {
@@ -281,7 +281,7 @@
 @media (max-width: 480px) and (min-width: 100px) {
   .contact {
     gap: 50px;
-    margin: 50px 50px;
+    margin: 50px 40px;
     align-items: start;
   }
   .contact-title h1 {
