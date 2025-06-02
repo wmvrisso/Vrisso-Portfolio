@@ -223,10 +223,10 @@
   }
 }
 
-@media (max-width: 768px) and (min-width: 400px) {
+@media (max-width: 768px) and (min-width: 480px) {
   .contact {
     gap: 50px;
-    margin: 50px 70px;
+    margin: 50px 50px;
     align-items: start;
   }
   .contact-title h1 {
@@ -278,14 +278,14 @@
   }
   .contact-submit a {
     text-decoration: none;
-    color: black;
+    color: black !important;
   }
 }
 
-@media (max-width: 400px) and (min-width: 100px) {
+@media (max-width: 480px) and (min-width: 100px) {
   .contact {
     gap: 50px;
-    margin: 50px 70px;
+    margin: 50px 50px;
     align-items: start;
   }
   .contact-title h1 {
@@ -337,6 +337,6 @@
   }
   .contact-submit a {
     text-decoration: none;
-    color: black;
+    color: black !important;
   }
 }

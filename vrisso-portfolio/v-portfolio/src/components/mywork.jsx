@@ -63,7 +63,7 @@ const MyWork = () => {
       </div>
 
       <div className="mywork-showmore">
-        <p>GitHub Projects</p>
+        <p>My GitHub</p>
         <img src={github_icon} alt="GitHub" />
       </div>
     </div>
