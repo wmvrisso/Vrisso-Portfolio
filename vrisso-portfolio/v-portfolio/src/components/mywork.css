@@ -201,7 +201,7 @@
 @media (max-width: 768px) and (min-width: 480px) {
   .mywork {
     gap: 50px;
-    margin: 50px 50px; /* Adjusted for smaller screens */
+    margin: 50px 30px; /* Adjusted for smaller screens */
     align-items: start; /* Align items to the start */
   }
   .mywork-title h1 {
@@ -234,15 +234,15 @@
     text-align: center;
   }
   .mywork-showmore {
-    padding: 15px 40px; /* Adjusted padding for smaller screens */
-    font-size: 15px; /* Adjusted font size for smaller screens */
+    padding: 20px 40px; /* Adjusted padding for smaller screens */
+    font-size: 18px; /* Adjusted font size for smaller screens */
   }
 }
 
 @media (max-width: 480px) and (min-width: 100px) {
   .mywork {
     gap: 50px;
-    margin: 50px 50px; /* Adjusted for smaller screens */
+    margin: 50px 30px; /* Adjusted for smaller screens */
     align-items: start; /* Align items to the start */
   }
   .mywork-title h1 {
@@ -264,7 +264,7 @@
     text-align: center;
   }
   .mywork-showmore {
-    padding: 15px 40px; /* Adjusted padding for smaller screens */
-    font-size: 15px; /* Adjusted font size for smaller screens */
+    padding: 20px 40px; /* Adjusted padding for smaller screens */
+    font-size: 18px; /* Adjusted font size for smaller screens */
   }
 }
