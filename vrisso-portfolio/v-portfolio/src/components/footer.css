@@ -45,7 +45,7 @@
   margin-top: 10px;
   color: rgb(234, 225, 218);
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 400px) {
   .footer {
     margin: 50px 70px;
   }
@@ -69,5 +69,48 @@
     justify-content: center;
     margin-top: 118px; /* Adds spacing between logo and icons */
     margin-right: 0px; /* Adjust as needed */
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    color: rgb(234, 225, 218);
+  }
+}
+
+@media (max-width: 400px) and (min-width: 100px) {
+  .footer {
+    margin: 50px 70px;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: center; /* Ensures all children (including logo) are centered */
+    gap: 10px;
+  }
+  .footer-logo {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto -165px auto; /* 20px space below the logo */
+    position: static;
+  }
+  .footer-socials {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 118px; /* Adds spacing between logo and icons */
+    margin-right: 0px; /* Adjust as needed */
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    color: rgb(234, 225, 218);
   }
 }

@@ -208,12 +208,22 @@
     font-size: 20px;
   }
   .contact-submit {
-    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    background: rgb(234, 225, 218);
     font-size: 20px;
+    padding: 15px 40px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .contact-submit a {
+    text-decoration: none;
+    color: black;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 400px) {
   .contact {
     gap: 50px;
     margin: 50px 70px;
@@ -257,7 +267,76 @@
     font-size: 20px;
   }
   .contact-submit {
-    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    background: rgb(234, 225, 218);
     font-size: 20px;
+    padding: 15px 40px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .contact-submit a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@media (max-width: 400px) and (min-width: 100px) {
+  .contact {
+    gap: 50px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+  .contact-title h1 {
+    padding: 0px;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .contact-section {
+    flex-direction: column;
+  }
+  .contact-left h1 {
+    font-size: 30px;
+  }
+  .contact-left p {
+    font-size: 18px;
+  }
+  .contact-detail {
+    gap: 20px;
+  }
+  .contact-detail img {
+    width: 25px; /* Adjust size as needed */
+  }
+  .contact-details {
+    gap: 20px;
+    font-size: 18px;
+    margin-bottom: 80px;
+  }
+  .contact-right label {
+    font-size: 20px;
+  }
+  .contact-right input {
+    width: 100%; /* Adjust width as needed */
+    font-size: 20px;
+  }
+  .contact-right textarea {
+    width: 95%; /* Adjust width as needed */
+    font-size: 20px;
+  }
+  .contact-submit {
+    border: none;
+    border-radius: 50px;
+    background: rgb(234, 225, 218);
+    font-size: 20px;
+    padding: 15px 40px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .contact-submit a {
+    text-decoration: none;
+    color: black;
   }
 }
