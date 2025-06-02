@@ -234,61 +234,7 @@
 @media (max-width: 768px) and (min-width: 480px) {
   .about {
     gap: 50px;
-    margin: 50px 50px;
-    align-items: start;
-  }
-  .about-title h1 {
-    font-size: 40px;
-    padding: 0px;
-  }
-  .about-sections {
-    flex-direction: column;
-  }
-  .about-left {
-    display: none;
-  }
-  .about-para {
-    font-size: 16px; /* slightly smaller for small screens */
-    line-height: 28px;
-    width: 100%;
-    max-width: 100%;
-    padding: 0 0px; /* horizontal padding for breathing space */
-    box-sizing: border-box;
-    text-align: left; /* optional: adjust for better alignment */
-  }
-  .about-skills {
-    gap: 20px;
-  }
-  .about-skill p {
-    font-size: 16px;
-  }
-  .about-skill hr {
-    margin-left: -90px;
-    height: 8px;
-    background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
-  }
-  .about-achievements {
-    justify-content: space-between;
-    display: flex;
-    width: 100%;
-  }
-  .about-achievement {
-    gap: 10px;
-  }
-  .about-achievement h1 {
-    font-size: 25px;
-    font-weight: 700;
-  }
-  .about-achievement p {
-    text-align: center;
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) and (min-width: 100px) {
-  .about {
-    gap: 50px;
-    margin: 50px 50px;
+    margin: 50px 40px;
     align-items: start;
   }
   .about-title h1 {
@@ -331,6 +277,60 @@
   }
   .about-achievement h1 {
     font-size: 20px;
+    font-weight: 700;
+  }
+  .about-achievement p {
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 100px) {
+  .about {
+    gap: 50px;
+    margin: 50px 40px;
+    align-items: start;
+  }
+  .about-title h1 {
+    font-size: 40px;
+    padding: 0px;
+  }
+  .about-sections {
+    flex-direction: column;
+  }
+  .about-left {
+    display: none;
+  }
+  .about-para {
+    font-size: 16px; /* slightly smaller for small screens */
+    line-height: 28px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0px; /* horizontal padding for breathing space */
+    box-sizing: border-box;
+    text-align: left; /* optional: adjust for better alignment */
+  }
+  .about-skills {
+    gap: 20px;
+  }
+  .about-skill p {
+    font-size: 16px;
+  }
+  .about-skill hr {
+    margin-left: -90px;
+    height: 8px;
+    background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
+  }
+  .about-achievements {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+  }
+  .about-achievement {
+    gap: 10px;
+  }
+  .about-achievement h1 {
+    font-size: 15px;
     font-weight: 700;
   }
   .about-achievement p {
