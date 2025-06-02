@@ -67,7 +67,8 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
-    margin-top: 80px; /* Adds spacing between logo and icons */
+    margin-bottom: -5px; /* Adjust spacing as needed */
+    margin-top: 75px; /* Adds spacing between logo and icons */
     margin-right: 0px; /* Adjust as needed */
   }
   .footer-bottom {
@@ -76,7 +77,7 @@
     align-items: center; /* Ensures vertical centering if needed */
     text-align: center; /* Ensures the text itself is centered */
     font-size: 12px;
-    margin: 10px auto 60px auto; /* Centers block and adds spacing */
+    margin: 0px auto 60px auto; /* Centers block and adds spacing */
     color: rgb(234, 225, 218);
     width: 100%; /* Ensures it spans the screen */
     max-width: 100%;
@@ -107,7 +108,8 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
-    margin-top: 80px; /* Adds spacing between logo and icons */
+    margin-bottom: -5px; /* Adjust spacing as needed */
+    margin-top: 75px; /* Adds spacing between logo and icons */
     margin-right: 0px; /* Adjust as needed */
   }
   .footer-bottom {
@@ -116,7 +118,7 @@
     align-items: center; /* Ensures vertical centering if needed */
     text-align: center; /* Ensures the text itself is centered */
     font-size: 12px;
-    margin: 10px auto 60px auto; /* Centers block and adds spacing */
+    margin: 0px auto 60px auto; /* Centers block and adds spacing */
     color: rgb(234, 225, 218);
     width: 100%; /* Ensures it spans the screen */
     max-width: 100%;
