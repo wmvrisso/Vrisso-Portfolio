@@ -55,7 +55,7 @@
     gap: 10px;
   }
   .footer-logo {
-    width: 160px;
+    width: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,10 +64,10 @@
   }
   .footer-socials {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     align-items: center;
     justify-content: center;
-    margin-top: 118px; /* Adds spacing between logo and icons */
+    margin-top: 90px; /* Adds spacing between logo and icons */
     margin-right: 0px; /* Adjust as needed */
   }
   .footer-bottom {
@@ -95,7 +95,7 @@
     gap: 10px;
   }
   .footer-logo {
-    width: 160px;
+    width: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,10 +104,10 @@
   }
   .footer-socials {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     align-items: center;
     justify-content: center;
-    margin-top: 118px; /* Adds spacing between logo and icons */
+    margin-top: 90px; /* Adds spacing between logo and icons */
     margin-right: 0px; /* Adjust as needed */
   }
   .footer-bottom {
