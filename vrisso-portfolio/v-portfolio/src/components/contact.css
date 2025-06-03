@@ -22,7 +22,7 @@
 }
 .contact-section {
   display: flex;
-  gap: 20px;
+  gap: 80px;
 }
 .contact-left {
   display: flex;
@@ -81,7 +81,7 @@
   font-size: 20px;
 }
 .contact-right textarea {
-  width: 650px; /* Adjust width as needed */
+  width: 680px; /* Adjust width as needed */
   border: none;
   padding: 25px 20px; /* Padding for text */
   border-radius: 4px;
@@ -127,6 +127,7 @@
   }
   .contact-section {
     flex-direction: column;
+    gap: 80px;
   }
   .contact-left h1 {
     font-size: 40px;
@@ -153,7 +154,7 @@
     font-size: 20px;
   }
   .contact-right textarea {
-    width: 95%; /* Adjust width as needed */
+    width: 97%; /* Adjust width as needed */
     font-size: 20px;
   }
   .contact-submit {
@@ -205,7 +206,7 @@
     font-size: 20px;
   }
   .contact-right textarea {
-    width: 95%; /* Adjust width as needed */
+    width: 97%; /* Adjust width as needed */
     font-size: 20px;
   }
   .contact-submit {
@@ -249,7 +250,7 @@
     width: 25px; /* Adjust size as needed */
   }
   .contact-details {
-    gap: 20px;
+    gap: 15px;
     font-size: 18px;
     margin-bottom: 80px;
   }
@@ -306,7 +307,7 @@
     width: 25px; /* Adjust size as needed */
   }
   .contact-details {
-    gap: 20px;
+    gap: 15px;
     font-size: 18px;
     margin-bottom: 80px;
   }

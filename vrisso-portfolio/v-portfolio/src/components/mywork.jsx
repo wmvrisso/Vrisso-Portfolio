@@ -62,10 +62,15 @@ const MyWork = () => {
         ))}
       </div>
 
-      <div className="mywork-showmore">
+      <a
+        href="https://github.com/wmvrisso"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mywork-showmore"
+      >
         <p>My GitHub</p>
         <img src={github_icon} alt="GitHub" />
-      </div>
+      </a>
     </div>
   );
 };

@@ -45,7 +45,11 @@ const About = () => {
               <hr className="skill-bar js" />
             </div>
             <div className="about-skill">
-              <p>Next JS</p>
+              <p>JUCE</p>
+              <hr className="skill-bar next" />
+            </div>
+            <div className="about-skill">
+              <p>C++</p>
               <hr className="skill-bar next" />
             </div>
           </div>

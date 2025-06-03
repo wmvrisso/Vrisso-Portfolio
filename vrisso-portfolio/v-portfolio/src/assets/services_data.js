@@ -7,9 +7,9 @@ const Services_Data = [
   },
   {
     s_no: "02",
-    s_name: "Audio Programming",
+    s_name: "Prompt Engineering",
     s_desc:
-      "I specialize in audio programming and provide interactive audio solutions.",
+      "I create and optimize prompts for AI models to enhance their performance and accuracy.",
   },
   {
     s_no: "03",

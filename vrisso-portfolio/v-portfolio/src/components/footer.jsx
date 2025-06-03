@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="footer-socials">
           {/* Discord Icon */}
           <a
-            href="https://discord.com/"
+            href="https://discordapp.com/users/billyv._18514"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Discord"
@@ -26,7 +26,7 @@ const Footer = () => {
 
           {/* GitHub Icon */}
           <a
-            href="https://github.com/"
+            href="https://github.com/wmvrisso"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -36,7 +36,7 @@ const Footer = () => {
 
           {/* LinkedIn Icon */}
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/william-m-vrisso/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
