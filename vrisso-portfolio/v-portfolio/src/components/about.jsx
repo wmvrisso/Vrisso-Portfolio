@@ -23,12 +23,10 @@ const About = () => {
             </p>
             <p>
               I am a recent graduate of the University of Oregon’s Coding
-              Bootcamp, where I gained hands-on experience in full-stack web
-              development. I hope to transfer my existing skills and apply new
-              ones in a real-world setting through an apprenticeship. My
-              long-term goal is to advance into audio development and contribute
-              to innovative projects. Some of the transferable skills from my
-              recent work include:
+              Bootcamp, where I gained hands-on experience in full-stack app
+              development. I hope to join a team where I can leverage my skills
+              and contribute to innovative projects. Some of the transferable
+              skills from my recent work include:
             </p>
           </div>
           <div className="about-skills">
