@@ -1,0 +1,19 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+.about-skills {
+  gap: 20px;
+}
+.about-skill p {
+  font-size: 20px;
+}
+.about-skill hr {
+  margin-left: -40px;
+  height: 8px;
+  background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
+}

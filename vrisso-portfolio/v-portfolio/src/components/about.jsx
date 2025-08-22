@@ -9,49 +9,28 @@ const About = () => {
         <h1>
           <span>Will Vrisso |</span> Full-stack Developer
         </h1>
+        <p>Based in Oregon, USA.</p>
       </div>
       <div className="about-sections">
         <div className="about-left">
-          <img src={full_profile_img} alt="" />
+          <p>
+            With 15 years of experience in Hospitality Management, I have built
+            a strong foundation in leadership, critical thinking and
+            problem-solving. In recent years, I’ve been further developing my
+            skills by learning new technologies and I have embraced a new
+            challenge—expanding my expertise into software development.
+          </p>
+          <p>
+            I am a recent graduate of the University of Oregon’s Coding
+            Bootcamp, where I gained hands-on experience in full-stack app
+            development. I hope to join a team where I can leverage my skills
+            and contribute to innovative projects. Some of the transferable
+            skills from my recent work include:
+          </p>
         </div>
         <div className="about-right">
-          <div className="about-para">
-            <p>
-              With 15 years of experience in Hospitality Management, I have
-              built a strong foundation in leadership, critical thinking and
-              problem-solving. In recent years, I’ve been further developing my
-              skills by learning new technologies and I have embraced a new
-              challenge—expanding my expertise into software development.
-            </p>
-            <p>
-              I am a recent graduate of the University of Oregon’s Coding
-              Bootcamp, where I gained hands-on experience in full-stack app
-              development. I hope to join a team where I can leverage my skills
-              and contribute to innovative projects. Some of the transferable
-              skills from my recent work include:
-            </p>
-          </div>
-          <div className="about-skills">
-            <div className="about-skill">
-              <p>HTML & CSS</p>
-              <hr className="skill-bar html-css" />
-            </div>
-            <div className="about-skill">
-              <p>React JS</p>
-              <hr className="skill-bar react" />
-            </div>
-            <div className="about-skill">
-              <p>JavaScript</p>
-              <hr className="skill-bar js" />
-            </div>
-            <div className="about-skill">
-              <p>JUCE</p>
-              <hr className="skill-bar next" />
-            </div>
-            <div className="about-skill">
-              <p>C++</p>
-              <hr className="skill-bar next" />
-            </div>
+          <div className="about-img">
+            <img src={full_profile_img} alt="" />
           </div>
         </div>
       </div>

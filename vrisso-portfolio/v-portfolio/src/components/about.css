@@ -1,21 +1,33 @@
 .about {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch; /* was center; lets children share the same left edge */
   justify-content: center;
   gap: 60px;
   margin: 80px 170px;
 }
+
 .about-title {
   position: relative;
+  text-align: left;
 }
 
+/* Shared left gutter so h1 and p start on the same vertical line */
+.about-title p {
+  font-size: 20px;
+}
+
+.about-left {
+}
+
+/* Remove padding from h1 itself so it uses the shared gutter */
 .about-title h1 {
-  padding: 0px 30px;
+  margin: 0; /* reset default h1 margins */
   font-size: 60px;
   font-weight: 600;
   color: rgb(234, 225, 218);
 }
+
 .about-title h1 span {
   background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
   background-clip: text;
@@ -23,19 +35,23 @@
   -webkit-text-fill-color: transparent;
 }
 
-.about-left img {
-  width: 500px;
-}
 .about-sections {
   display: flex;
   gap: 0px;
 }
-.about-right {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
+
+.about-left p {
+  /* no need for flex on a paragraph */
+  margin: 0 0 30px; /* keep vertical spacing, align left edge */
+  font-size: 28px;
+  line-height: 32px;
 }
-.about-para {
+
+.about-right img {
+  width: 500px;
+}
+
+.about-img {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -121,20 +137,33 @@
   .about {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch; /* was center; lets children share the same left edge */
     justify-content: center;
     gap: 60px;
     margin: 80px 170px;
   }
+
   .about-title {
     position: relative;
+    text-align: left;
   }
+
+  /* Shared left gutter so h1 and p start on the same vertical line */
+  .about-title p {
+    font-size: 20px;
+  }
+
+  .about-left {
+  }
+
+  /* Remove padding from h1 itself so it uses the shared gutter */
   .about-title h1 {
-    padding: 0px 30px;
-    font-size: 50px;
+    margin: 0; /* reset default h1 margins */
+    font-size: 40px;
     font-weight: 600;
     color: rgb(234, 225, 218);
   }
+
   .about-title h1 span {
     background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
     background-clip: text;
@@ -142,18 +171,29 @@
     -webkit-text-fill-color: transparent;
   }
 
-  .about-left img {
-    display: none;
-  }
   .about-sections {
-    flex-direction: column;
+    display: flex;
+    gap: 0px;
   }
-  .about-left {
-    display: none;
-  }
-  .about-para {
+
+  .about-left p {
+    /* no need for flex on a paragraph */
+    margin: 0 0 30px; /* keep vertical spacing, align left edge */
     font-size: 18px;
     line-height: 32px;
+  }
+
+  .about-right img {
+    width: 400px;
+  }
+
+  .about-img {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(234, 225, 218);
   }
   .about-skills {
     gap: 20px;
@@ -210,16 +250,20 @@
     -webkit-text-fill-color: transparent;
   }
 
-  .about-left img {
+  .about-right img {
     display: none;
   }
   .about-sections {
     flex-direction: column;
   }
-  .about-left {
-    display: none;
+  .about-left p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 32px;
   }
-  .about-para {
+  .about-img {
     font-size: 18px;
     line-height: 32px;
   }
@@ -272,10 +316,10 @@
   .about-sections {
     flex-direction: column;
   }
-  .about-left {
+  .about-right img {
     display: none;
   }
-  .about-para {
+  .about-left p {
     font-size: 16px; /* slightly smaller for small screens */
     line-height: 28px;
     width: 100%;
