@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./components/navbar";
-import Hero from "./components/hero";
 import About from "./components/about";
 import Skills from "./components/skills";
 import Services from "./components/services";
@@ -12,7 +11,6 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
       <About />
       <Skills />
       <Services />

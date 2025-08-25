@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../assets/images/v-gradient-logo-bold.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import resume_pdf from "../assets/files/Vrisso-Resume-25.pdf"; // Import the resume file
 import menu_open from "../assets/images/ham-open-menu.svg";
 import menu_close from "../assets/images/x-menu.svg";
 
@@ -35,15 +36,15 @@ const Navbar = () => {
           />
         )}
 
-        {/* Your menu items */}
-        <li>
-          <AnchorLink className="anchor-link" href="#home">
-            <p onClick={() => setMenu(false)}>Home</p>
-          </AnchorLink>
-        </li>
+        {/* Updated menu items */}
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#about">
             <p onClick={() => setMenu(false)}>About Me</p>
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink className="anchor-link" offset={50} href="#skills">
+            <p onClick={() => setMenu(false)}>Skills</p>
           </AnchorLink>
         </li>
         <li>
@@ -63,10 +64,10 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div className="nav-connect">
-        <AnchorLink className="anchor-link" offset={50} href="#contact">
-          Connect
-        </AnchorLink>
+      <div className="nav-resume">
+        <a href={resume_pdf} download="Vrisso-Resume-25.pdf">
+          Resume
+        </a>
       </div>
     </nav>
   );

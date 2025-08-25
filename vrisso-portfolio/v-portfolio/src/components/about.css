@@ -5,11 +5,14 @@
   justify-content: center;
   gap: 60px;
   margin: 80px 170px;
+  margin-top: 0;
+  padding-bottom: 100px;
 }
 
 .about-title {
   position: relative;
   text-align: left;
+  margin-top: 200px;
 }
 
 /* Shared left gutter so h1 and p start on the same vertical line */
@@ -45,6 +48,41 @@
   margin: 0 0 30px; /* keep vertical spacing, align left edge */
   font-size: 28px;
   line-height: 32px;
+}
+
+.about-buttons {
+  margin-bottom: 150px;
+  display: flex;
+  align-items: left;
+  gap: 25px;
+  font-weight: 500;
+  font-size: 24px;
+}
+.about-connect {
+  padding: 25px 45px;
+  border-radius: 50px;
+  background: rgb(234, 225, 218);
+  cursor: pointer;
+}
+.about-connect a {
+  text-decoration: none;
+  color: black;
+}
+.about-resume {
+  padding: 25px 45px;
+  border-radius: 50px;
+  border: 2px solid rgb(234, 225, 218);
+  cursor: pointer;
+}
+.about-resume a {
+  text-decoration: none;
+  color: rgb(234, 225, 218);
+}
+.about-connect:hover {
+  border: 2px solid white;
+}
+.about-resume:hover {
+  border-color: rgb(180, 170, 163);
 }
 
 .about-right img {
@@ -194,17 +232,6 @@
     font-size: 24px;
     font-weight: 500;
     color: rgb(234, 225, 218);
-  }
-  .about-skills {
-    gap: 20px;
-  }
-  .about-skill p {
-    font-size: 20px;
-  }
-  .about-skill hr {
-    margin-left: -40px;
-    height: 8px;
-    background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
   }
   .about-achievements {
     justify-content: space-between;

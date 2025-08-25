@@ -6,14 +6,102 @@
   gap: 80px;
   margin: 80px 170px;
 }
+
+.skills-title {
+  position: relative;
+  margin-top: -200px;
+  margin-bottom: 75px;
+}
+.skills-title h1 {
+  padding: 0px 30px;
+  font-size: 60px;
+  font-weight: 600;
+  color: rgb(234, 225, 218);
+}
+
 .about-skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; /* spacing between columns */
+  width: 100%;
+  max-width: 1200px;
+}
+
+.skills-column {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
+
+.skills-column-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about-skill {
+  display: flex;
+  align-items: center; /* keeps text & bar aligned horizontally */
+  gap: 10px; /* spacing between text and bar */
+}
+
 .about-skill p {
   font-size: 20px;
+  white-space: nowrap; /* keeps text on one line */
+  width: 140px; /* fixed width so bars line up neatly */
 }
+
 .about-skill hr {
-  margin-left: -40px;
   height: 8px;
+  border: none;
+  border-radius: 4px;
   background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
+}
+.skill-bar.html-css {
+  width: 50%;
+}
+.skill-bar.react {
+  width: 50%;
+}
+.skill-bar.js {
+  width: 45%;
+}
+.skill-bar.tailwind {
+  width: 35%;
+}
+.skill-bar.ts {
+  width: 30%;
+}
+
+.skill-bar.node {
+  width: 40%;
+}
+.skill-bar.express {
+  width: 45%;
+}
+.skill-bar.postgres {
+  width: 50%;
+}
+.skill-bar.mongo {
+  width: 40%;
+}
+.skill-bar.git {
+  width: 45%;
+}
+
+.skill-bar.agile {
+  width: 55%;
+}
+.skill-bar.scrum {
+  width: 55%;
+}
+.skill-bar.leadership {
+  width: 40%;
+}
+.skill-bar.planning {
+  width: 40%;
+}
+.skill-bar.communication {
+  width: 40%;
 }

@@ -22,7 +22,7 @@
 .nav-logo img {
   width: 175px; /* Adjust size */
   position: relative;
-  top: 5px; /* Adjust vertical position */
+  top: 0px; /* Adjust vertical position */
   margin-left: 150px; /* Adjust as needed */
   pointer-events: auto; /* Allow interaction with the logo */
   z-index: 1100;
@@ -68,27 +68,22 @@
   transform: scaleX(1);
 }
 
-/* "Let's Connect" button */
-.nav-connect {
-  background: rgb(234, 225, 218);
-  font-family: "Outfit", sans-serif;
-  font-size: 20px;
-  padding: 15px 25px;
-  border-radius: 7px;
-  margin-right: 230px;
+.nav-resume {
+  padding: 25px 45px;
+  border-radius: 50px;
+  transform: translateX(-50px); /* shift 20px to the left */
+  border: 2px solid rgb(234, 225, 218);
   cursor: pointer;
-  transition: 0.2s;
-  position: relative;
 }
-.nav-connect a {
+.nav-resume a {
   text-decoration: none;
-  color: black;
+  color: rgb(234, 225, 218);
 }
 
-/* Hover effect for button */
-.nav-connect:hover {
-  transform: scale(1.05);
+.nav-resume:hover {
+  border-color: rgb(180, 170, 163);
 }
+
 .anchor-link {
   text-decoration: none; /* Remove underline */
   color: rgb(234, 225, 218); /* Text color */
@@ -175,10 +170,10 @@
   }
 
   /* "Let's Connect" button */
-  .nav-connect {
+  .nav-resume {
     display: none;
   }
-  .nav-connect a {
+  .nav-resume a {
     text-decoration: none;
     color: black;
   }
@@ -275,7 +270,7 @@
     transform: scaleX(1);
   }
 
-  .nav-connect {
+  .nav-resume {
     display: none;
   }
 }
@@ -369,7 +364,7 @@
     cursor: pointer;
   }
 
-  .nav-connect {
+  .nav-resume {
     display: none;
   }
 }

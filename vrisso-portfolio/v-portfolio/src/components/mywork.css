@@ -127,7 +127,7 @@
   border: 2px solid rgb(234, 225, 218);
   color: rgb(234, 225, 218);
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 50px;
   cursor: pointer;
   transition: 0.3s;
 }

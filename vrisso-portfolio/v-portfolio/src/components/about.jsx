@@ -1,6 +1,8 @@
 import React from "react";
 import "../components/about.css";
 import full_profile_img from "../assets/images/vp_profile.png";
+import resume_pdf from "../assets/files/Vrisso-Resume-25.pdf"; // Import resume
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const About = () => {
   return (
@@ -11,6 +13,7 @@ const About = () => {
         </h1>
         <p>Based in Oregon, USA.</p>
       </div>
+
       <div className="about-sections">
         <div className="about-left">
           <p>
@@ -27,46 +30,36 @@ const About = () => {
             and contribute to innovative projects. Some of the transferable
             skills from my recent work include:
           </p>
+
+          {/* === Buttons Section (moved from Hero.jsx) === */}
+          <div className="about-buttons">
+            <div className="about-connect">
+              <AnchorLink className="btn" offset={50} href="#contact">
+                Connect
+              </AnchorLink>
+            </div>
+            <div className="about-resume">
+              <a
+                className="btn secondary"
+                href={resume_pdf}
+                download="Vrisso-Resume-25.pdf"
+              >
+                Resume
+              </a>
+            </div>
+          </div>
         </div>
+
         <div className="about-right">
           <div className="about-img">
-            <img src={full_profile_img} alt="" />
+            <img src={full_profile_img} alt="Will Vrisso" />
           </div>
         </div>
       </div>
-      <div className="about-achievements">
-        <div className="about-achievement">
-          <h1>15 yrs.</h1>
-          <p>
-            Managment
-            <br />
-            Experience
-          </p>
-        </div>
-        <hr />
-        <div className="about-achievement">
-          <h1>10 yrs.</h1>
-          <p>
-            Sales & <br />
-            Marketing
-          </p>
-        </div>
-        <hr />
-        <div className="about-achievement">
-          <h1>5 yrs.</h1>
-          <p>
-            Mechanical
-            <br />
-            Skills
-          </p>
-        </div>
-        <hr />
-        <div className="about-achievement">
-          <h1>5 yrs.</h1>
-          <p>IT Support</p>
-        </div>
-      </div>
+
+      <div className="about-achievements"></div>
     </div>
   );
 };
+
 export default About;
