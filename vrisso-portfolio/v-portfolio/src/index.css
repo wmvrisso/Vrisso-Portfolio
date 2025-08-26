@@ -5,7 +5,11 @@
 
 body {
   height: 100vh;
-  font-family: "outfit";
-  background: #000;
-  color: #fff;
+  margin: 0;
+  font-family: "outfit", sans-serif;
+  background-color: #000; /* base black background */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(234, 225, 218);
+  min-height: 100vh;
 }

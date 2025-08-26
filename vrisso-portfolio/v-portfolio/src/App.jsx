@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import Navbar from "./components/navbar";
 import About from "./components/about";
 import Skills from "./components/skills";
@@ -9,13 +10,16 @@ import Footer from "./components/footer";
 
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
       <Navbar />
-      <About />
-      <Skills />
-      <Services />
-      <MyWork />
-      <Contact />
+
+      {/* Add section-bg to each section for individual gradient */}
+      <About className="section-bg" />
+      <Skills className="section-bg" />
+      <Services className="section-bg" />
+      <MyWork className="section-bg" />
+      <Contact className="section-bg" />
+
       <Footer />
     </div>
   );

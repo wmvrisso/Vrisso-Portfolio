@@ -46,7 +46,7 @@
 .about-left p {
   /* no need for flex on a paragraph */
   margin: 0 0 30px; /* keep vertical spacing, align left edge */
-  font-size: 28px;
+  font-size: 24px;
   line-height: 32px;
 }
 
@@ -56,7 +56,11 @@
   align-items: left;
   gap: 25px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
+  padding: 15px 30px; /* smaller buttons */
+  border-radius: 40px;
+  margin-left: 0;
+  padding-left: 0;
 }
 .about-connect {
   padding: 25px 45px;
@@ -98,79 +102,6 @@
   color: rgb(234, 225, 218);
 }
 
-.skill-bar.html-css {
-  width: clamp(200px, 50vw, 400px);
-}
-.skill-bar.react {
-  width: clamp(200px, 45vw, 370px);
-}
-.skill-bar.js {
-  width: clamp(200px, 45vw, 370px);
-}
-.skill-bar.next {
-  width: clamp(200px, 40vw, 300px);
-}
-
-.about-skills {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.about-skill {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  transition: 0.3s;
-}
-.about-skill p {
-  min-width: 150px;
-  font-size: 24px;
-  font-weight: 500;
-}
-.about-skill hr {
-  outline: none;
-  border: none;
-  width: 50%;
-  height: 8px;
-  border-radius: 50px;
-  background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
-}
-.about-achievements {
-  display: flex;
-  width: 80%;
-  justify-content: space-around;
-  margin-top: 30px;
-  margin-bottom: 80px;
-}
-.about-achievement {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  transition: 0.5s;
-}
-.about-achievement h1 {
-  font-size: 40px;
-  font-weight: 700;
-  background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.about-achievement p {
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
-}
-.about-skill:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-.about-achievement:hover {
-  transform: scale(1.12);
-  transition: 0.5s;
-}
-
 @media (max-width: 1200px) and (min-width: 1024px) {
   .about {
     display: flex;
@@ -179,6 +110,8 @@
     justify-content: center;
     gap: 60px;
     margin: 80px 170px;
+    margin-top: 0;
+    padding-bottom: 100px;
   }
 
   .about-title {
@@ -221,8 +154,56 @@
     line-height: 32px;
   }
 
+  .about-buttons {
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row; /* horizontal layout */
+    justify-content: flex-start; /* align to left */
+    gap: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px 30px; /* smaller buttons */
+    border-radius: 40px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .about-connect {
+    display: flex; /* use flexbox */
+    align-items: center; /* vertically center */
+    justify-content: center; /* horizontally center */
+    cursor: pointer;
+    text-align: center; /* fallback */
+    white-space: nowrap;
+    background: rgb(234, 225, 218);
+    cursor: pointer;
+  }
+  .about-connect a {
+    text-decoration: none;
+    color: black;
+  }
+  .about-resume {
+    display: flex; /* use flexbox */
+    align-items: center; /* vertically center */
+    justify-content: center; /* horizontally center */
+    cursor: pointer;
+    text-align: center; /* fallback */
+    white-space: nowrap;
+    border: 2px solid rgb(234, 225, 218);
+    cursor: pointer;
+  }
+  .about-resume a {
+    text-decoration: none;
+    color: rgb(234, 225, 218);
+  }
+  .about-connect:hover {
+    border: 2px solid white;
+  }
+  .about-resume:hover {
+    border-color: rgb(180, 170, 163);
+  }
+
   .about-right img {
-    width: 400px;
+    width: 500px;
   }
 
   .about-img {
@@ -233,42 +214,22 @@
     font-weight: 500;
     color: rgb(234, 225, 218);
   }
-  .about-achievements {
-    justify-content: space-between;
-    display: flex;
-    width: 100%;
-    margin-top: 30px;
-  }
-  .about-achievement {
-    gap: 10px;
-  }
-  .about-achievement h1 {
-    font-size: 30px;
-    font-weight: 700;
-  }
-  .about-achievement p {
-    text-align: center;
-    font-size: 12px;
-  }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .about {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch; /* was center; lets children share the same left edge */
     justify-content: center;
     gap: 60px;
     margin: 80px 170px;
-  }
-  .about-title {
-    position: relative;
+    margin-top: 0;
+    padding-bottom: 100px;
   }
   .about-title h1 {
-    padding: 0px 30px;
-    font-size: 50px;
-    font-weight: 600;
-    color: rgb(234, 225, 218);
+    font-size: 40px;
+    padding: 0px;
   }
   .about-title h1 span {
     background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
@@ -287,48 +248,72 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    font-size: 28px;
+    font-size: 18px;
     line-height: 32px;
   }
   .about-img {
     font-size: 18px;
     line-height: 32px;
   }
-  .about-skills {
-    gap: 20px;
-  }
-  .about-skill p {
-    font-size: 20px;
-  }
-  .about-skill hr {
-    margin-left: -40px;
-    height: 8px;
-    background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
-  }
-  .about-achievements {
-    justify-content: space-between;
+  .about-buttons {
+    margin-bottom: 150px;
     display: flex;
-    width: 100%;
-    margin-top: 30px;
+    flex-direction: row; /* horizontal layout */
+    justify-content: flex-start; /* align to left */
+    gap: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px 30px; /* smaller buttons */
+    border-radius: 40px;
+    margin-left: 0;
+    padding-left: 0;
   }
-  .about-achievement {
-    gap: 10px;
+  .about-connect {
+    display: flex; /* use flexbox */
+    align-items: center; /* vertically center */
+    justify-content: center; /* horizontally center */
+    cursor: pointer;
+    text-align: center; /* fallback */
+    white-space: nowrap;
+    background: rgb(234, 225, 218);
+    cursor: pointer;
   }
-  .about-achievement h1 {
-    font-size: 28px;
-    font-weight: 700;
+  .about-connect a {
+    text-decoration: none;
+    color: black;
   }
-  .about-achievement p {
-    text-align: center;
-    font-size: 12px;
+  .about-resume {
+    display: flex; /* use flexbox */
+    align-items: center; /* vertically center */
+    justify-content: center; /* horizontally center */
+    cursor: pointer;
+    text-align: center; /* fallback */
+    white-space: nowrap;
+    border: 2px solid rgb(234, 225, 218);
+    cursor: pointer;
+  }
+  .about-resume a {
+    text-decoration: none;
+    color: rgb(234, 225, 218);
+  }
+  .about-connect:hover {
+    border: 2px solid white;
+  }
+  .about-resume:hover {
+    border-color: rgb(180, 170, 163);
   }
 }
 
 @media (max-width: 768px) and (min-width: 480px) {
   .about {
-    gap: 50px;
-    margin: 50px 40px;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* was center; lets children share the same left edge */
+    justify-content: center;
+    gap: 60px;
+    margin: 100px 100px;
+    margin-top: 0;
+    padding-bottom: 100px;
   }
   .about-title h1 {
     font-size: 40px;
@@ -355,46 +340,52 @@
     box-sizing: border-box;
     text-align: left; /* optional: adjust for better alignment */
   }
-  .about-skills {
-    gap: 20px;
-  }
-  .about-skill p {
-    font-size: 16px;
-  }
-  .skill-bar.html-css {
-    width: clamp(100px, 50vw, 200px);
-  }
-  .skill-bar.react {
-    width: clamp(100px, 45vw, 170px);
-  }
-  .skill-bar.js {
-    width: clamp(100px, 45vw, 170px);
-  }
-  .skill-bar.next {
-    width: clamp(100px, 40vw, 100px);
-  }
-
-  .about-skill hr {
-    margin-left: -90px;
-    height: 8px;
-    background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
-  }
-  .about-achievements {
-    justify-content: space-between;
+  .about-buttons {
+    margin-bottom: 150px;
     display: flex;
-    width: 100%;
-    margin-bottom: 50px;
+    flex-direction: row; /* horizontal layout */
+    justify-content: flex-start; /* align to left */
+    gap: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px 30px; /* smaller buttons */
+    border-radius: 40px;
+    margin-left: 0;
+    padding-left: 0;
   }
-  .about-achievement {
-    gap: 10px;
+  .about-connect {
+    display: flex; /* use flexbox */
+    align-items: center; /* vertically center */
+    justify-content: center; /* horizontally center */
+    cursor: pointer;
+    text-align: center; /* fallback */
+    white-space: nowrap;
+    background: rgb(234, 225, 218);
+    cursor: pointer;
   }
-  .about-achievement h1 {
-    font-size: 20px;
-    font-weight: 700;
+  .about-connect a {
+    text-decoration: none;
+    color: black;
   }
-  .about-achievement p {
-    text-align: center;
-    font-size: 12px;
+  .about-resume {
+    display: flex; /* use flexbox */
+    align-items: center; /* vertically center */
+    justify-content: center; /* horizontally center */
+    cursor: pointer;
+    text-align: center; /* fallback */
+    white-space: nowrap;
+    border: 2px solid rgb(234, 225, 218);
+    cursor: pointer;
+  }
+  .about-resume a {
+    text-decoration: none;
+    color: rgb(234, 225, 218);
+  }
+  .about-connect:hover {
+    border: 2px solid white;
+  }
+  .about-resume:hover {
+    border-color: rgb(180, 170, 163);
   }
 }
 
@@ -429,45 +420,51 @@
     box-sizing: border-box;
     text-align: left; /* optional: adjust for better alignment */
   }
-  .about-skills {
-    gap: 20px;
-  }
-  .about-skill p {
-    font-size: 16px;
-  }
-  .skill-bar.html-css {
-    width: clamp(100px, 50vw, 200px);
-  }
-  .skill-bar.react {
-    width: clamp(100px, 45vw, 170px);
-  }
-  .skill-bar.js {
-    width: clamp(100px, 45vw, 170px);
-  }
-  .skill-bar.next {
-    width: clamp(100px, 40vw, 100px);
-  }
-
-  .about-skill hr {
-    margin-left: -90px;
-    height: 8px;
-    background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
-  }
-  .about-achievements {
-    justify-content: space-between;
+  .about-buttons {
+    margin-bottom: 150px;
     display: flex;
-    width: 100%;
-    margin-bottom: 50px;
+    flex-direction: row; /* horizontal layout */
+    justify-content: flex-start; /* align to left */
+    gap: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px 30px; /* smaller buttons */
+    border-radius: 40px;
+    margin-left: 0;
+    padding-left: 0;
   }
-  .about-achievement {
-    gap: 10px;
+  .about-connect {
+    display: flex; /* use flexbox */
+    align-items: center; /* vertically center */
+    justify-content: center; /* horizontally center */
+    cursor: pointer;
+    text-align: center; /* fallback */
+    white-space: nowrap;
+    background: rgb(234, 225, 218);
+    cursor: pointer;
   }
-  .about-achievement h1 {
-    font-size: 15px;
-    font-weight: 700;
+  .about-connect a {
+    text-decoration: none;
+    color: black;
   }
-  .about-achievement p {
-    text-align: center;
-    font-size: 10px;
+  .about-resume {
+    display: flex; /* use flexbox */
+    align-items: center; /* vertically center */
+    justify-content: center; /* horizontally center */
+    cursor: pointer;
+    text-align: center; /* fallback */
+    white-space: nowrap;
+    border: 2px solid rgb(234, 225, 218);
+    cursor: pointer;
+  }
+  .about-resume a {
+    text-decoration: none;
+    color: rgb(234, 225, 218);
+  }
+  .about-connect:hover {
+    border: 2px solid white;
+  }
+  .about-resume:hover {
+    border-color: rgb(180, 170, 163);
   }
 }

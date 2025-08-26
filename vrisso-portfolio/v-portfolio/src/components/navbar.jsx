@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import logo from "../assets/images/v-gradient-logo-bold.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import resume_pdf from "../assets/files/Vrisso-Resume-25.pdf"; // Import the resume file
 import menu_open from "../assets/images/ham-open-menu.svg";
@@ -12,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <a href="/" className="nav-logo">
-        <img src={logo} alt="" />
+        <h1>Portfolio</h1>
       </a>
 
       {/* Mobile Menu Open Icon (only when menu is closed) */}
@@ -63,12 +62,6 @@ const Navbar = () => {
           </AnchorLink>
         </li>
       </ul>
-
-      <div className="nav-resume">
-        <a href={resume_pdf} download="Vrisso-Resume-25.pdf">
-          Resume
-        </a>
-      </div>
     </nav>
   );
 };

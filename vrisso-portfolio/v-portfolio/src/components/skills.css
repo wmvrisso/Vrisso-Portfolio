@@ -21,7 +21,7 @@
 
 .about-skills {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px; /* spacing between columns */
   width: 100%;
   max-width: 1200px;
@@ -104,4 +104,104 @@
 }
 .skill-bar.communication {
   width: 40%;
+}
+
+@media (max-width: 1200px) and (min-width: 1024px) {
+  .about-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px; /* spacing between columns */
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .skills {
+    margin: 40px 20px; /* Less margin for small screens */
+    gap: 40px;
+  }
+
+  .skills-title h1 {
+    font-size: 40px; /* Smaller title */
+    text-align: center;
+  }
+
+  .about-skill p {
+    width: auto; /* Let text size naturally */
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .about-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px; /* spacing between columns */
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .skills {
+    margin: 40px 20px; /* Less margin for small screens */
+    gap: 40px;
+  }
+
+  .skills-title h1 {
+    font-size: 40px; /* Smaller title */
+    text-align: center;
+  }
+
+  .about-skill p {
+    width: auto; /* Let text size naturally */
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+  .about-skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px; /* spacing between columns */
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .skills {
+    margin: 40px 20px; /* Less margin for small screens */
+    gap: 40px;
+  }
+
+  .skills-title h1 {
+    font-size: 40px; /* Smaller title */
+    text-align: center;
+  }
+
+  .about-skill p {
+    width: auto; /* Let text size naturally */
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 100px) {
+  .about-skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px; /* spacing between columns */
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .skills {
+    margin: 40px 20px; /* Less margin for small screens */
+    gap: 40px;
+  }
+
+  .skills-title h1 {
+    font-size: 40px; /* Smaller title */
+    text-align: center;
+  }
+
+  .about-skill p {
+    width: auto; /* Let text size naturally */
+    font-size: 18px;
+  }
 }
