@@ -1,3 +1,11 @@
+:root {
+  --accent-1: rgb(180, 210, 255);
+  --accent-2: rgb(200, 230, 255);
+  --muted-text: rgb(234, 225, 218);
+  --bg-track: rgba(255, 255, 255, 0.04);
+}
+
+/* ========= Layout ========= */
 .skills {
   display: flex;
   flex-direction: column;
@@ -9,20 +17,21 @@
 
 .skills-title {
   position: relative;
-  margin-top: -200px;
-  margin-bottom: 75px;
+  margin-top: -50px;
+  margin-bottom: 20px;
 }
 .skills-title h1 {
   padding: 0px 30px;
   font-size: 60px;
   font-weight: 600;
-  color: rgb(234, 225, 218);
+  color: var(--muted-text);
 }
 
+/* Grid layout for skill columns */
 .about-skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px; /* spacing between columns */
+  gap: 40px;
   width: 100%;
   max-width: 1200px;
 }
@@ -35,173 +44,273 @@
 
 .skills-column-title {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 15px;
+  text-align: center;
+  color: var(--muted-text);
+}
+
+/* ========= Skill row (name | bar | percent) ========= */
+.about-skill {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+/* skill name */
+.about-skill p {
+  font-size: 18px;
+  white-space: nowrap;
+  width: 140px; /* aligns names */
+  margin: 0;
+  color: var(--muted-text);
+}
+
+/* bar container (flexes to fill available space) */
+.skill-bar {
+  flex: 1;
+  height: 14px;
+  background: var(--bg-track); /* track */
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* fill portion */
+.skill-progress {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* percentage label (outside to the right) */
+.skill-percent {
+  min-width: 46px;
+  text-align: right;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--muted-text);
+  margin-left: 10px;
+}
+
+/* ========= Skill-specific widths (match your JSX percentages) ========= */
+/* Front-End */
+.skill-progress.html-css {
+  width: 90%;
+}
+.skill-progress.react {
+  width: 90%;
+}
+.skill-progress.js {
+  width: 80%;
+}
+.skill-progress.cpp {
+  width: 50%;
+}
+.skill-progress.ts {
+  width: 50%;
+}
+
+/* Back-End */
+.skill-progress.node {
+  width: 80%;
+}
+.skill-progress.express {
+  width: 85%;
+}
+.skill-progress.postgres {
+  width: 85%;
+}
+.skill-progress.mongo {
+  width: 70%;
+}
+.skill-progress.git {
+  width: 80%;
+}
+
+/* Management */
+.skill-progress.agile {
+  width: 90%;
+}
+.skill-progress.sales {
+  width: 98%;
+}
+.skill-progress.budgeting {
+  width: 90%;
+}
+.skill-progress.planning {
+  width: 98%;
+}
+.skill-progress.communication {
+  width: 95%;
+}
+
+/* Slight visual variation for a few skill fills (optional, still within theme) */
+.skill-progress.react {
+  background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
+}
+.skill-progress.js {
+  background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
+}
+.skill-progress.git {
+  background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
+}
+
+/* ========= Additional skills bubbles (match dark theme) ========= */
+.additional-skills {
+  margin-top: 80px;
   text-align: center;
 }
 
-.about-skill {
+.skills-bubbles {
   display: flex;
-  align-items: center; /* keeps text & bar aligned horizontally */
-  gap: 10px; /* spacing between text and bar */
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.about-skill p {
-  font-size: 20px;
-  white-space: nowrap; /* keeps text on one line */
-  width: 140px; /* fixed width so bars line up neatly */
+.skill-bubble {
+  background: linear-gradient(135deg, rgb(180, 210, 255), rgb(200, 230, 255));
+  color: rgb(34, 34, 34);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background 0.3s ease;
+  cursor: default;
 }
 
-.about-skill hr {
-  height: 8px;
-  border: none;
-  border-radius: 4px;
-  background: linear-gradient(90deg, rgb(180, 210, 255), rgb(200, 230, 255));
-}
-.skill-bar.html-css {
-  width: 50%;
-}
-.skill-bar.react {
-  width: 50%;
-}
-.skill-bar.js {
-  width: 45%;
-}
-.skill-bar.tailwind {
-  width: 35%;
-}
-.skill-bar.ts {
-  width: 30%;
+.skill-bubble:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, rgb(160, 200, 255), rgb(180, 220, 255));
 }
 
-.skill-bar.node {
-  width: 40%;
-}
-.skill-bar.express {
-  width: 45%;
-}
-.skill-bar.postgres {
-  width: 50%;
-}
-.skill-bar.mongo {
-  width: 40%;
-}
-.skill-bar.git {
-  width: 45%;
-}
-
-.skill-bar.agile {
-  width: 55%;
-}
-.skill-bar.scrum {
-  width: 55%;
-}
-.skill-bar.leadership {
-  width: 40%;
-}
-.skill-bar.planning {
-  width: 40%;
-}
-.skill-bar.communication {
-  width: 40%;
-}
-
+/* ========= Responsive adjustments ========= */
 @media (max-width: 1200px) and (min-width: 1024px) {
   .about-skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px; /* spacing between columns */
-    width: 100%;
-    max-width: 1200px;
+    grid-template-columns: 1fr 1fr;
   }
-
   .skills {
-    margin: 40px 20px; /* Less margin for small screens */
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
   }
-
   .skills-title h1 {
-    font-size: 40px; /* Smaller title */
-    text-align: center;
+    font-size: 50px;
+    padding: 10px;
   }
-
   .about-skill p {
-    width: auto; /* Let text size naturally */
-    font-size: 18px;
+    width: 130px;
+    font-size: 17px;
+  }
+  .skill-percent {
+    font-size: 14px;
+    min-width: 44px;
   }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .about-skills {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px; /* spacing between columns */
-    width: 100%;
-    max-width: 1200px;
   }
-
   .skills {
-    margin: 40px 20px; /* Less margin for small screens */
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
   }
-
   .skills-title h1 {
-    font-size: 40px; /* Smaller title */
-    text-align: center;
+    font-size: 50px;
+    padding: 10px;
   }
-
   .about-skill p {
-    width: auto; /* Let text size naturally */
-    font-size: 18px;
+    width: 130px;
+    font-size: 17px;
+  }
+  .skill-percent {
+    font-size: 14px;
+    min-width: 44px;
   }
 }
 
 @media (max-width: 768px) and (min-width: 480px) {
+  /* switch to single column for small screens */
   .about-skills {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 40px; /* spacing between columns */
-    width: 100%;
-    max-width: 1200px;
+    gap: 24px;
   }
-
   .skills {
-    margin: 40px 20px; /* Less margin for small screens */
-    gap: 40px;
+    align-items: start;
+    gap: 70px;
+    margin: 20px 30px;
   }
-
   .skills-title h1 {
-    font-size: 40px; /* Smaller title */
-    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    margin-top: 0;
   }
-
+  .about-skill {
+    gap: 12px;
+  }
   .about-skill p {
-    width: auto; /* Let text size naturally */
-    font-size: 18px;
+    width: auto;
+    font-size: 16px;
+    white-space: normal;
+  }
+  /* make percent sit a little closer on small screens */
+  .skill-percent {
+    min-width: 40px;
+    font-size: 14px;
   }
 }
+
+/* small tweak: ensure bars visible if some global styles target hr elements */
+.about-skill hr {
+  display: none;
+} /* hide any leftover <hr> bars to avoid conflicts */
 
 @media (max-width: 480px) and (min-width: 100px) {
+  /* switch to single column for small screens */
   .about-skills {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 40px; /* spacing between columns */
-    width: 100%;
-    max-width: 1200px;
+    gap: 24px;
   }
-
   .skills {
-    margin: 40px 20px; /* Less margin for small screens */
-    gap: 40px;
+    align-items: start;
+    gap: 70px;
+    margin: 20px 30px;
   }
-
   .skills-title h1 {
-    font-size: 40px; /* Smaller title */
-    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    margin-top: 0;
   }
-
+  .about-skill {
+    gap: 12px;
+  }
   .about-skill p {
-    width: auto; /* Let text size naturally */
-    font-size: 18px;
+    width: auto;
+    font-size: 16px;
+    white-space: normal;
+  }
+  /* make percent sit a little closer on small screens */
+  .skill-percent {
+    min-width: 40px;
+    font-size: 14px;
   }
 }
+
+/* small tweak: ensure bars visible if some global styles target hr elements */
+.about-skill hr {
+  display: none;
+} /* hide any leftover <hr> bars to avoid conflicts */

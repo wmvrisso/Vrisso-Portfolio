@@ -3,7 +3,6 @@ import "../components/mywork.css";
 import mywork_data from "../assets/mywork_data";
 import LeftArrow from "../assets/images/arrow-left-5-svgrepo-com.svg";
 import RightArrow from "../assets/images/right-arrow-svgrepo-com.svg";
-import github_icon from "../assets/images/github-icon.svg"; // GitHub icon
 
 const chunkArray = (array, size) =>
   Array.from({ length: Math.ceil(array.length / size) }, (_, i) =>
@@ -61,16 +60,6 @@ const MyWork = () => {
           </div>
         ))}
       </div>
-
-      <a
-        href="https://github.com/wmvrisso"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mywork-showmore"
-      >
-        <p>My GitHub</p>
-        <img src={github_icon} alt="GitHub" />
-      </a>
     </div>
   );
 };

@@ -50,41 +50,65 @@
   line-height: 32px;
 }
 
+/* About Buttons Section */
 .about-buttons {
-  margin-bottom: 150px;
   display: flex;
-  align-items: left;
-  gap: 25px;
+  flex-direction: row; /* horizontal layout */
+  align-items: center; /* vertically align all buttons */
+  gap: 25px; /* space between buttons */
+  margin-bottom: 50px; /* spacing below the button row */
   font-weight: 500;
   font-size: 18px;
-  padding: 15px 30px; /* smaller buttons */
-  border-radius: 40px;
-  margin-left: 0;
   padding-left: 0;
 }
+
+/* GitHub / Connect Button */
 .about-connect {
-  padding: 25px 45px;
+  display: inline-flex; /* use flexbox */
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
   border-radius: 50px;
   background: rgb(234, 225, 218);
+  padding: 13px 32px; /* match height of resume button */
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.6s;
   cursor: pointer;
-}
-.about-connect a {
   text-decoration: none;
   color: black;
 }
+
+.about-connect img {
+  width: 40px;
+}
+
+.about-connect:hover {
+  border: 2px black;
+}
+
+/* Resume Button */
 .about-resume {
-  padding: 25px 45px;
+  display: inline-flex; /* use flexbox */
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px 45px; /* match GitHub button */
   border-radius: 50px;
   border: 2px solid rgb(234, 225, 218);
   cursor: pointer;
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.3s ease;
 }
+
 .about-resume a {
   text-decoration: none;
   color: rgb(234, 225, 218);
 }
-.about-connect:hover {
-  border: 2px solid white;
-}
+
 .about-resume:hover {
   border-color: rgb(180, 170, 163);
 }
@@ -196,7 +220,7 @@
     color: rgb(234, 225, 218);
   }
   .about-connect:hover {
-    border: 2px solid white;
+    border: 2px black;
   }
   .about-resume:hover {
     border-color: rgb(180, 170, 163);
@@ -238,8 +262,16 @@
     -webkit-text-fill-color: transparent;
   }
 
+  .about-right {
+    display: flex;
+    justify-content: left;
+  }
+
   .about-right img {
-    display: none;
+    display: flex; /* no longer hidden */
+    width: 80%;
+    height: auto;
+    margin: -100px 0;
   }
   .about-sections {
     flex-direction: column;
@@ -297,7 +329,7 @@
     color: rgb(234, 225, 218);
   }
   .about-connect:hover {
-    border: 2px solid white;
+    border: 2px black;
   }
   .about-resume:hover {
     border-color: rgb(180, 170, 163);
@@ -329,7 +361,10 @@
     flex-direction: column;
   }
   .about-right img {
-    display: none;
+    display: block; /* no longer hidden */
+    width: 100%;
+    height: auto;
+    margin: -100px 0;
   }
   .about-left p {
     font-size: 16px; /* slightly smaller for small screens */
@@ -382,7 +417,7 @@
     color: rgb(234, 225, 218);
   }
   .about-connect:hover {
-    border: 2px solid white;
+    border: 2px black;
   }
   .about-resume:hover {
     border-color: rgb(180, 170, 163);
@@ -408,6 +443,13 @@
   .about-sections {
     flex-direction: column;
   }
+  .about-right img {
+    display: block; /* no longer hidden */
+    width: 100%;
+    height: auto;
+    margin: -100px 0;
+  }
+
   .about-left {
     display: none;
   }
@@ -462,7 +504,7 @@
     color: rgb(234, 225, 218);
   }
   .about-connect:hover {
-    border: 2px solid white;
+    border: 2px black;
   }
   .about-resume:hover {
     border-color: rgb(180, 170, 163);

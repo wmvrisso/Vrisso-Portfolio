@@ -61,14 +61,6 @@
   transition: 0.3s; /* Smooth transition for hover effect */
 }
 
-.github-icon {
-  width: 34px; /* Small fixed size */
-  height: 34px;
-}
-.github-icon:hover {
-  opacity: 0.7; /* Subtle fade effect on hover */
-  transition: 0.3s; /* Smooth transition for hover effect */
-}
 .deployed-link {
   display: block;
   margin-top: 15px;
@@ -78,34 +70,6 @@
   font-family: "Outfit", sans-serif; /* Ensure consistency with the rest of the site */
   color: rgb(234, 225, 218);
   text-align: center;
-}
-
-.mywork-showmore {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  border-radius: 50px;
-  border: 2px solid rgb(234, 225, 218); /* Optional: Border for the button */
-  padding: 30px 60px; /* Padding for the button */
-  font-size: 22px; /* Font size for the button */
-  font-weight: 500;
-  margin-bottom: 80px; /* Ensures spacing below the button */
-  transition: 0.6s; /* Smooth transition for hover effect */
-  cursor: pointer;
-  text-decoration: none; /* Removes underline from link */
-  color: rgb(234, 225, 218); /* Text color */
-}
-.mywork-showmore a {
-  text-decoration: none; /* Removes underline from link */
-  color: rgb(234, 225, 218); /* Text color */
-}
-.mywork-showmore img {
-  width: 40px; /* Adjust icon size as needed */
-  align-items: center;
-}
-.mywork-showmore:hover {
-  border-color: rgb(180, 170, 163); /* Border color on hover */
-  transform: scale(1.1); /* Slightly enlarges the image on hover */
 }
 
 .carousel-controls {
@@ -119,14 +83,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 10px;
   font-weight: 500;
   font-family: Outfit, sans-serif;
   background-color: transparent;
   border: 2px solid rgb(234, 225, 218);
   color: rgb(234, 225, 218);
-  padding: 10px 20px;
+  padding: 15px 15px;
   border-radius: 50px;
   cursor: pointer;
   transition: 0.3s;
@@ -139,9 +102,7 @@
 }
 
 .carousel-arrow:hover {
-  background-color: rgb(234, 225, 218);
-  color: black;
-  transform: scale(1.1);
+  border-color: rgb(180, 170, 163);
 }
 
 @media (max-width: 1200px) and (min-width: 1024px) {
@@ -167,24 +128,19 @@
   }
 
   .carousel-arrow {
-    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
     font-weight: 500;
     font-family: Outfit, sans-serif;
     background-color: transparent;
     border: 2px solid rgb(234, 225, 218);
     color: rgb(234, 225, 218);
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 10px 10px;
+    border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
-    text-align: center;
-  }
-  .mywork-showmore {
-    padding: 20px 40px; /* Adjusted padding for smaller screens */
-    font-size: 18px; /* Adjusted font size for smaller screens */
-  }
-  .mywork-showmore:hover {
-    border-color: rgb(180, 170, 163); /* Border color on hover */
   }
 }
 
@@ -204,17 +160,19 @@
   }
 
   .carousel-arrow {
-    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
     font-weight: 500;
     font-family: Outfit, sans-serif;
     background-color: transparent;
     border: 2px solid rgb(234, 225, 218);
     color: rgb(234, 225, 218);
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 10px 10px;
+    border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
-    text-align: center;
   }
   .mywork-container .project-image:hover {
     transform: scale(1.1); /* Slightly enlarges the image on hover */
@@ -222,14 +180,6 @@
     border: 4px solid rgb(234, 225, 218); /* Optional: Adds a border on hover */
     border-radius: 10px; /* Maintains the rounded corners */
     transition: 0.3s; /* Ensures the transition is smooth */
-  }
-
-  .mywork-showmore {
-    padding: 20px 40px; /* Adjusted padding for smaller screens */
-    font-size: 18px; /* Adjusted font size for smaller screens */
-  }
-  .mywork-showmore:hover {
-    border-color: rgb(180, 170, 163); /* Border color on hover */
   }
 }
 
@@ -272,21 +222,19 @@
   }
 
   .carousel-arrow {
-    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
     font-weight: 500;
     font-family: Outfit, sans-serif;
     background-color: transparent;
     border: 2px solid rgb(234, 225, 218);
     color: rgb(234, 225, 218);
-    padding: 0px 10px;
-    border-radius: 20px;
+    padding: 5px 5px;
+    border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
-    text-align: center;
-  }
-  .mywork-showmore {
-    padding: 15px 40px; /* Adjusted padding for smaller screens */
-    font-size: 18px; /* Adjusted font size for smaller screens */
   }
 }
 
@@ -319,20 +267,18 @@
   }
 
   .carousel-arrow {
-    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
     font-weight: 500;
     font-family: Outfit, sans-serif;
     background-color: transparent;
     border: 2px solid rgb(234, 225, 218);
     color: rgb(234, 225, 218);
-    padding: 0px 10px;
-    border-radius: 20px;
+    padding: 5px 5px;
+    border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
-    text-align: center;
-  }
-  .mywork-showmore {
-    padding: 15px 40px; /* Adjusted padding for smaller screens */
-    font-size: 18px; /* Adjusted font size for smaller screens */
   }
 }

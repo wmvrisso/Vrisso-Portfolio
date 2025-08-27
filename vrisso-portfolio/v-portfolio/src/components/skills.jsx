@@ -14,23 +14,38 @@ const Skills = () => {
           <h2 className="skills-column-title">Front-End</h2>
           <div className="about-skill">
             <p>HTML & CSS</p>
-            <hr className="skill-bar html-css" />
+            <div className="skill-bar">
+              <div className="skill-progress html-css"></div>
+            </div>
+            <span className="skill-percent">90%</span>
           </div>
           <div className="about-skill">
             <p>React JS</p>
-            <hr className="skill-bar react" />
+            <div className="skill-bar">
+              <div className="skill-progress react"></div>
+            </div>
+            <span className="skill-percent">90%</span>
           </div>
           <div className="about-skill">
             <p>JavaScript</p>
-            <hr className="skill-bar js" />
+            <div className="skill-bar">
+              <div className="skill-progress js"></div>
+            </div>
+            <span className="skill-percent">80%</span>
           </div>
           <div className="about-skill">
-            <p>Tailwind CSS</p>
-            <hr className="skill-bar tailwind" />
+            <p>C++</p>
+            <div className="skill-bar">
+              <div className="skill-progress cpp"></div>
+            </div>
+            <span className="skill-percent">50%</span>
           </div>
           <div className="about-skill">
             <p>TypeScript</p>
-            <hr className="skill-bar ts" />
+            <div className="skill-bar">
+              <div className="skill-progress ts"></div>
+            </div>
+            <span className="skill-percent">50%</span>
           </div>
         </div>
 
@@ -39,23 +54,38 @@ const Skills = () => {
           <h2 className="skills-column-title">Back-End</h2>
           <div className="about-skill">
             <p>Node.js</p>
-            <hr className="skill-bar node" />
+            <div className="skill-bar">
+              <div className="skill-progress node"></div>
+            </div>
+            <span className="skill-percent">80%</span>
           </div>
           <div className="about-skill">
             <p>Express.js</p>
-            <hr className="skill-bar express" />
+            <div className="skill-bar">
+              <div className="skill-progress express"></div>
+            </div>
+            <span className="skill-percent">85%</span>
           </div>
           <div className="about-skill">
             <p>PostgreSQL</p>
-            <hr className="skill-bar postgres" />
+            <div className="skill-bar">
+              <div className="skill-progress postgres"></div>
+            </div>
+            <span className="skill-percent">85%</span>
           </div>
           <div className="about-skill">
             <p>MongoDB</p>
-            <hr className="skill-bar mongo" />
+            <div className="skill-bar">
+              <div className="skill-progress mongo"></div>
+            </div>
+            <span className="skill-percent">70%</span>
           </div>
           <div className="about-skill">
             <p>Git</p>
-            <hr className="skill-bar git" />
+            <div className="skill-bar">
+              <div className="skill-progress git"></div>
+            </div>
+            <span className="skill-percent">85%</span>
           </div>
         </div>
 
@@ -64,24 +94,55 @@ const Skills = () => {
           <h2 className="skills-column-title">Management</h2>
           <div className="about-skill">
             <p>Agile Workflow</p>
-            <hr className="skill-bar agile" />
+            <div className="skill-bar">
+              <div className="skill-progress agile"></div>
+            </div>
+            <span className="skill-percent">90%</span>
           </div>
           <div className="about-skill">
-            <p>Scrum</p>
-            <hr className="skill-bar scrum" />
+            <p>Sales & Marketing</p>
+            <div className="skill-bar">
+              <div className="skill-progress sales"></div>
+            </div>
+            <span className="skill-percent">98%</span>
           </div>
           <div className="about-skill">
-            <p>Team Leadership</p>
-            <hr className="skill-bar leadership" />
+            <p>Budgeting</p>
+            <div className="skill-bar">
+              <div className="skill-progress budgeting"></div>
+            </div>
+            <span className="skill-percent">90%</span>
           </div>
           <div className="about-skill">
             <p>Project Planning</p>
-            <hr className="skill-bar planning" />
+            <div className="skill-bar">
+              <div className="skill-progress planning"></div>
+            </div>
+            <span className="skill-percent">98%</span>
           </div>
           <div className="about-skill">
             <p>Communication</p>
-            <hr className="skill-bar communication" />
+            <div className="skill-bar">
+              <div className="skill-progress communication"></div>
+            </div>
+            <span className="skill-percent">95%</span>
           </div>
+        </div>
+      </div>
+
+      {/* Additional Skills Section */}
+      <div className="additional-skills">
+        <h2 className="skills-column-title">Additional Skills</h2>
+        <div className="skills-bubbles">
+          <span className="skill-bubble">Figma</span>
+          <span className="skill-bubble">MS365</span>
+          <span className="skill-bubble">Power BI</span>
+          <span className="skill-bubble">SolidWorks</span>
+          <span className="skill-bubble">JUCE</span>
+          <span className="skill-bubble">CI/CD</span>
+          <span className="skill-bubble">Web API's</span>
+          <span className="skill-bubble">SEO Basics</span>
+          <span className="skill-bubble">Deployment</span>
         </div>
       </div>
     </div>

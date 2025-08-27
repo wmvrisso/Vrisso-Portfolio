@@ -2,7 +2,7 @@ import React from "react";
 import "../components/about.css";
 import full_profile_img from "../assets/images/vp_profile.png";
 import resume_pdf from "../assets/files/Vrisso-Resume-25.pdf"; // Import resume
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import github_icon from "../assets/images/icons8-github.svg"; // GitHub icon
 
 const About = () => {
   return (
@@ -17,27 +17,33 @@ const About = () => {
       <div className="about-sections">
         <div className="about-left">
           <p>
-            With 15 years of experience in Hospitality Management, I have built
-            a strong foundation in leadership, critical thinking and
+            With 15 years of experience in Technical Management, I have built a
+            strong foundation in leadership, critical thinking and
             problem-solving. In recent years, I’ve been further developing my
-            skills by learning new technologies and I have embraced a new
-            challenge—expanding my expertise into software development.
+            skills by expanding my expertise into software development.
           </p>
           <p>
             I am a recent graduate of the University of Oregon’s Coding
-            Bootcamp, where I gained hands-on experience in full-stack app
-            development. I hope to join a team where I can leverage my skills
-            and contribute to innovative projects. Some of the transferable
-            skills from my recent work include:
+            Bootcamp, gaining hands-on experience in full-stack development. By
+            partnering with other like-minded developers, I've been able to
+            effectively combine our efforts and strengthen our expertise. I look
+            forward to joining a team where I can contribute my skills.
           </p>
 
-          {/* === Buttons Section (moved from Hero.jsx) === */}
+          {/* === Buttons Section === */}
           <div className="about-buttons">
-            <div className="about-connect">
-              <AnchorLink className="btn" offset={50} href="#contact">
-                Connect
-              </AnchorLink>
-            </div>
+            {/* Replaced Connect button with My GitHub */}
+            <a
+              href="https://github.com/wmvrisso"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about-connect"
+            >
+              <span>GitHub</span>
+              <img src={github_icon} alt="GitHub" />
+            </a>
+
+            {/* Resume button remains unchanged */}
             <div className="about-resume">
               <a
                 className="btn secondary"
