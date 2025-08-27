@@ -426,9 +426,14 @@
 
 @media (max-width: 480px) and (min-width: 100px) {
   .about {
-    gap: 50px;
-    margin: 50px 40px;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* was center; lets children share the same left edge */
+    justify-content: center;
+    gap: 60px;
+    margin: 100px 100px;
+    margin-top: 0;
+    padding-bottom: 100px;
   }
   .about-title h1 {
     font-size: 40px;
