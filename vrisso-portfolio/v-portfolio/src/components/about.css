@@ -356,9 +356,9 @@
   }
   .about-right img {
     display: block;
-    width: 90%; /* scale down slightly for mobile */
+    width: 120%; /* scale down slightly for mobile */
     height: auto;
-    margin: -80px auto 0; /* reduce top margin so it's closer to buttons */
+    margin: -100px auto 0; /* reduce top margin so it's closer to buttons */
     position: relative;
   }
   .about-left p {
@@ -377,8 +377,8 @@
     justify-content: center; /* align to center */
     gap: 25px;
     font-weight: 500;
-    font-size: 18px;
-    padding: 15px 30px; /* smaller buttons */
+    font-size: 15px;
+    padding: 10px 25px; /* smaller buttons */
     border-radius: 40px;
     padding: 0; /* remove extra padding */
     width: 100%;
@@ -445,9 +445,9 @@
   }
   .about-right img {
     display: block;
-    width: 90%; /* scale down slightly for mobile */
+    width: 120%; /* scale down slightly for mobile */
     height: auto;
-    margin: -80px auto 0; /* reduce top margin so it's closer to buttons */
+    margin: -100px auto 0; /* reduce top margin so it's closer to buttons */
     position: relative;
   }
   .about-left p {
@@ -466,8 +466,8 @@
     justify-content: flex-start; /* align to left */
     gap: 25px;
     font-weight: 500;
-    font-size: 18px;
-    padding: 15px 30px; /* smaller buttons */
+    font-size: 15px;
+    padding: 10px 25px; /* smaller buttons */
     border-radius: 40px;
     margin-left: 0;
     padding-left: 0;
