@@ -145,9 +145,6 @@
     font-size: 20px;
   }
 
-  .about-left {
-  }
-
   /* Remove padding from h1 itself so it uses the shared gutter */
   .about-title h1 {
     margin: 0; /* reset default h1 margins */
@@ -359,10 +356,9 @@
   }
   .about-right img {
     display: block; /* no longer hidden */
-    width: 150%;
+    width: 120%;
     height: auto;
     margin: -120px 0;
-    margin-left: -110px;
   }
   .about-left p {
     font-size: 16px; /* slightly smaller for small screens */
@@ -448,10 +444,9 @@
   }
   .about-right img {
     display: block; /* no longer hidden */
-    width: 150%;
+    width: 120%;
     height: auto;
     margin: -120px 0;
-    margin-left: -110px;
   }
   .about-left p {
     font-size: 16px; /* slightly smaller for small screens */
