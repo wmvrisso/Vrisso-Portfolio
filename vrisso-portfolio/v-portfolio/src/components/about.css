@@ -355,10 +355,11 @@
     flex-direction: column;
   }
   .about-right img {
-    display: block; /* no longer hidden */
-    width: 120%;
+    display: block;
+    width: 90%; /* scale down slightly for mobile */
     height: auto;
-    margin: -120px 0;
+    margin: -80px auto 0; /* reduce top margin so it's closer to buttons */
+    position: relative;
   }
   .about-left p {
     font-size: 16px; /* slightly smaller for small screens */
@@ -373,14 +374,14 @@
     margin-bottom: 150px;
     display: flex;
     flex-direction: row; /* horizontal layout */
-    justify-content: flex-start; /* align to left */
+    justify-content: center; /* align to center */
     gap: 25px;
     font-weight: 500;
     font-size: 18px;
     padding: 15px 30px; /* smaller buttons */
     border-radius: 40px;
-    margin-left: 0;
-    padding-left: 0;
+    padding: 0; /* remove extra padding */
+    width: 100%;
   }
   .about-connect {
     display: flex; /* use flexbox */
@@ -443,10 +444,11 @@
     flex-direction: column;
   }
   .about-right img {
-    display: block; /* no longer hidden */
-    width: 120%;
+    display: block;
+    width: 90%; /* scale down slightly for mobile */
     height: auto;
-    margin: -120px 0;
+    margin: -80px auto 0; /* reduce top margin so it's closer to buttons */
+    position: relative;
   }
   .about-left p {
     font-size: 16px; /* slightly smaller for small screens */

@@ -264,7 +264,7 @@
     align-items: center; /* Center children horizontally */
     justify-content: flex-start;
     position: fixed;
-    height: 150px;
+    height: 120px;
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
     padding: 0;
@@ -276,11 +276,14 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin: 50px 0 0 20px; /* Reset margins for mobile */
+    justify-content: center; /* ✅ Center horizontally */
+    margin: 40px 0 0 0; /* ✅ Remove left offset, keep top spacing */
     font-size: 20px;
     font-weight: 200;
     color: rgb(234, 225, 218);
     text-decoration: none;
+    width: 100%; /* ✅ Take full width so flex centering works */
+    text-align: center; /* ✅ Ensure text inside is centered */
   }
 
   .nav-menu {
@@ -325,7 +328,7 @@
     top: 0px;
     right: 20px;
     width: 60px;
-    height: 150px;
+    height: 120px;
     z-index: 1001;
     cursor: pointer;
   }
@@ -353,7 +356,7 @@
     align-items: center; /* Center children horizontally */
     justify-content: flex-start;
     position: fixed;
-    height: 150px;
+    height: 120px;
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
     padding: 0;
@@ -365,11 +368,14 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin: 50px 0 0 20px; /* Reset margins for mobile */
+    justify-content: center; /* ✅ Center horizontally */
+    margin: 40px 0 0 0; /* ✅ Remove left offset, keep top spacing */
     font-size: 20px;
     font-weight: 200;
     color: rgb(234, 225, 218);
     text-decoration: none;
+    width: 100%; /* ✅ Take full width so flex centering works */
+    text-align: center; /* ✅ Ensure text inside is centered */
   }
 
   .nav-menu {
@@ -381,7 +387,7 @@
     justify-content: flex-start;
     gap: 50px;
     width: 350px;
-    height: 100vh;
+    height: 120vh;
     z-index: 1000;
     transition: right 0.5s ease;
     padding: 40px 10px;
@@ -414,7 +420,7 @@
     top: 0px;
     right: 20px;
     width: 60px;
-    height: 150px;
+    height: 100px;
     z-index: 1001;
     cursor: pointer;
   }
